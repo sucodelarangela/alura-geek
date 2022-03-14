@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo--img {
+  width: 6.25rem;
+}
+
+.header__button {
+  font-size: 0.875rem;
+  color: var(--blue-100);
+  border: 1px solid var(--blue-100);
+  padding: 0.75rem 2.97rem;
+}
+
+.header__search {
+  color: var(--black);
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --raleway: 'Raleway', sans-serif;
+
+  /* Colors */
+  --white: #ffffff;
+  --blue-100: #2a7ae4;
+  --black: #464646;
+}
+
+/* Elements */
+
+body {
+  background: var(--white);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--raleway);
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.container {
+  padding: 1rem;
+}
