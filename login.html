@@ -26,7 +26,7 @@
         />
       </a>
       <!-- <input type="search" /> -->
-      <a class="header__button" href="login.html">Login</a>
+      <a class="button__void button" href="login.html">Login</a>
       <a class="header__search" href="#">
         <i class="icon-search"></i>
       </a>
@@ -47,31 +47,47 @@
     </section>
 
     <!-- Contato -->
-    <section class="contato">
-      <img src="" alt="Logo da Alura Geek" />
-      <ul>
-        <li><a href="">Quem somos nós</a></li>
-        <li><a href="">Política de privacidade</a></li>
-        <li><a href="">Programa fidelidade</a></li>
-        <li><a href="">Nossas lojas</a></li>
-        <li><a href="">Quero ser franqueado</a></li>
-        <li><a href="">Anuncie aqui</a></li>
-      </ul>
-      <form action="">
+    <section class="contact container">
+      <div class="contact__links">
+        <a class="contact__logo" href="#home">
+          <img
+            class="contact__logo--img"
+            src="assets/images/logo.svg"
+            alt="Loja Alura Geek"
+          />
+        </a>
+        <ul>
+          <li>Quem somos nós</li>
+          <li>Política de privacidade</li>
+          <li>Programa fidelidade</li>
+          <li>Nossas lojas</li>
+          <li>Quero ser franqueado</li>
+          <li>Anuncie aqui</li>
+        </ul>
+      </div>
+
+      <form action="" class="contact__form">
         <fieldset>
           <legend>Fale conosco</legend>
-          <label for=""></label>
-          <input type="text" />
-          <label for=""></label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button type="submit">Enviar mensagem</button>
+          <label for="name" aria-label="Digite seu nome">Nome</label>
+          <input id="name" type="text" />
+          <label for="message" class="sr-only">Escreva sua mensagem:</label>
+          <textarea
+            name=""
+            id="message"
+            placeholder="Escreva sua mensagem"
+          ></textarea>
+          <button type="submit" class="button__blue button">
+            Enviar mensagem
+          </button>
         </fieldset>
       </form>
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer class="footer">
       <p>Desenvolvido por Angela Caldas</p>
+      <p>2022</p>
     </footer>
   </body>
 </html>
