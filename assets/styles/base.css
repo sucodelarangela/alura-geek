@@ -13,11 +13,18 @@
   /* Colors */
   --white: #ffffff;
   --blue: #2a7ae4;
+  --blue-10: #eaf2fd;
   --black: #464646;
   --black-5: #f5f5f5;
+  --black-30: #c8c8c8;
+  --black-50: #a2a2a2;
 }
 
 /* Elements */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--white);

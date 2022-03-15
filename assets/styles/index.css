@@ -79,14 +79,14 @@
 .grid {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fill, 10.25rem);
+  grid-template-columns: repeat(auto-fit, 9.75rem);
   grid-template-rows: auto;
   gap: 1rem;
   padding: 1rem 0 0;
 }
 
 .products img {
-  width: 10.25rem;
+  width: 9.75rem;
   height: 10.875rem;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -107,4 +107,86 @@
 
 .products a {
   color: var(--blue);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-10);
+}
+
+.contact__links {
+  margin-bottom: 2rem;
+}
+
+.contact__logo--img {
+  width: 11rem;
+}
+
+.contact li {
+  list-style: none;
+  text-align: center;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact li:last-child {
+  margin: 0;
+}
+
+.contact__form input,
+.contact__form textarea {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 0 var(--black-30);
+}
+
+.contact__form input {
+  padding: 0.5rem 0.75rem;
+  padding-top: 1.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contact__form textarea {
+  resize: none;
+  padding: 1rem 0.75rem;
+
+  margin-bottom: 0.5rem;
+  min-height: 5.125rem;
+}
+
+.contact__form label {
+  font-size: 0.75rem;
+  color: var(--black-50);
+  margin-top: 0.5rem;
+  margin-left: 0.75rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.contact__form textarea::placeholder {
+  font-size: 1rem;
+  color: var(--black-50);
+}
+
+.contact__form legend {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  background: var(--white);
+  text-align: center;
+  padding: 2rem;
 }
