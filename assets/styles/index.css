@@ -1,3 +1,4 @@
+/* ========== INDEX.HTML ========== */
 .banner {
   position: relative;
 }
@@ -79,4 +80,24 @@
 
 .products a {
   color: var(--blue);
+}
+
+/* ========== LOGIN.HTML ========== */
+.section.form {
+  padding: 6rem 2.5rem;
+}
+
+.login__form legend {
+  text-align: center;
+}
+
+.login__form input {
+  padding: 1rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.login__form .button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 2.125rem;
 }

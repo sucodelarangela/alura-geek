@@ -33,15 +33,25 @@
     </header>
 
     <!-- Login -->
-    <section class="login">
-      <form action="">
+    <section class="section form container">
+      <form action="" class="login__form">
         <fieldset>
           <legend>Iniciar Sessão</legend>
-          <label for=""></label>
-          <input type="email" name="" id="" />
-          <label for=""></label>
-          <input type="password" name="" id="" />
-          <button type="submit">Entrar</button>
+          <label for="email" class="sr-only">Escreva seu email</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Escreva seu email"
+          />
+          <label for="" class="sr-only">Escreva sua senha</label>
+          <input
+            type="password"
+            name=""
+            id=""
+            placeholder="Escreva sua senha"
+          />
+          <button type="submit" class="button__blue button">Entrar</button>
         </fieldset>
       </form>
     </section>
@@ -86,7 +96,12 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-      <p>Desenvolvido por Angela Caldas</p>
+      <a href="https://angelacaldas.vercel.app" aria-labelledby="portfolio">
+        <i class="icon-logo"></i>
+      </a>
+      <p id="portfolio">
+        Desenvolvido por Angela Caldas<span class="sr-only">Ver portfolio</span>
+      </p>
       <p>2022</p>
     </footer>
   </body>

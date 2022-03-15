@@ -136,7 +136,15 @@ i {
   margin: 0;
 }
 
+form legend {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
 .contact__form input,
+.login__form input,
 .contact__form textarea {
   display: inline-block;
   width: 100%;
@@ -171,22 +179,26 @@ i {
   z-index: 1;
 }
 
-.contact__form textarea::placeholder {
+::placeholder {
   font-size: 1rem;
   color: var(--black-50);
 }
 
-.contact__form legend {
-  font-size: 1rem;
-  color: var(--black);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+/* Footer */
+.footer {
+  padding: 2rem;
 }
 
-/* Footer */
-
-.footer {
+.footer,
+.footer a {
   background: var(--white);
   text-align: center;
-  padding: 2rem;
+  align-items: center;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--blue);
 }
