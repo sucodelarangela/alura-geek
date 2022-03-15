@@ -12,7 +12,7 @@
 
   /* Colors */
   --white: #ffffff;
-  --blue-100: #2a7ae4;
+  --blue: #2a7ae4;
   --black: #464646;
   --black-5: #f5f5f5;
 }
@@ -45,16 +45,16 @@ i {
 }
 
 .button__void {
-  color: var(--blue-100);
+  color: var(--blue);
   background: transparent;
-  border: 1px solid var(--blue-100);
+  border: 1px solid var(--blue);
   padding: 0.75rem 2.97rem;
 }
 
 .button__blue {
   color: var(--white);
-  background: var(--blue-100);
-  border: 1px solid var(--blue-100);
+  background: var(--blue);
+  border: 1px solid var(--blue);
   padding: 0.75rem 1rem;
 }
 

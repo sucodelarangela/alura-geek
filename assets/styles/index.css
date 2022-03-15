@@ -18,7 +18,7 @@
 }
 
 .banner__image {
-  width: 100vw;
+  width: 100%;
   height: 50vw;
   max-height: 22rem;
   box-shadow: inset 0 0 150rem black;
@@ -49,18 +49,62 @@
   padding-top: 0.5rem;
 }
 
-.highlight {
+.section {
   background: var(--black-5);
 }
 
-.highlight__text {
+.section__text {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.highlight__text h2 {
+.section__text h2 {
   color: var(--black);
   font-size: 1.375rem;
   font-weight: 700;
-  padding-bottom: 1rem;
+}
+
+.section__text a {
+  font-size: 0.875rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.section__text a > i {
+  font-size: 1rem;
+  color: var(--blue);
+}
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 10.25rem);
+  grid-template-rows: auto;
+  gap: 1rem;
+  padding: 1rem 0 0;
+}
+
+.products img {
+  width: 10.25rem;
+  height: 10.875rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.products h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.products p,
+.products a {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.products a {
+  color: var(--blue);
 }
