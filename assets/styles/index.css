@@ -15,7 +15,7 @@
 .banner__text {
   position: absolute;
   left: 1rem;
-  bottom: 2rem;
+  bottom: 1rem;
   color: var(--white);
 }
 
@@ -33,7 +33,7 @@
 }
 
 .banner__button {
-  padding-top: 0.5rem;
+  display: flex;
 }
 
 .section__text {
@@ -63,7 +63,8 @@
   display: none;
 }
 
-.products img {
+.products img,
+.all__products img {
   min-width: 9.75rem;
   width: 100%;
   height: 10.875rem;
@@ -71,17 +72,25 @@
   margin-bottom: 0.5rem;
 }
 
-.products h3 {
+.products h3,
+.all__products h3 {
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.all__products div h3:last-child {
+  margin: 0;
 }
 
 .products p,
-.product p {
+.product p,
+.all__products p {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--black);
 }
 
 .products a {
@@ -131,4 +140,12 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--black);
+}
+
+/* ========== ALL PRODUCTS PAGE ========== */
+.all__products h2 {
+  padding-bottom: 1rem;
+}
+.add__product {
+  display: flex;
 }
