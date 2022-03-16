@@ -33,12 +33,15 @@
     </header>
 
     <!-- Produto -->
-    <section class="produto">
+    <section class="section product__image">
+      <img src="assets/images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
+    </section>
+
+    <section class="section product container">
       <div>
-        <img src="" alt="XYZ" />
-        <h3>Produto XYZ</h3>
+        <h1>Produto XYZ</h1>
         <p>R$ 60,00</p>
-        <p>
+        <p class="product__description">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
           laboriosam nemo repellendus iure officia suscipit delectus eius esse
           eligendi cupiditate expedita eum quaerat, voluptatem similique!
@@ -47,34 +50,47 @@
       </div>
     </section>
 
-    <section class="similares">
-      <div class="grid">
+    <section class="section container">
+      <div class="section__text">
         <h2>Produtos similares</h2>
+      </div>
+      <div class="products grid">
         <div>
-          <img src="" alt="XYZ" />
+          <img
+            src="assets/images/xbox-one-white-controller.jpg"
+            alt=""
+            aria-hidden="true"
+          />
           <h3>Controle XYZ</h3>
           <p>R$ 60,00</p>
-          <a href="">Ver produto</a>
+          <a href="#">Ver produto</a>
         </div>
         <div>
-          <img src="" alt="XYZ" />
+          <img
+            src="assets/images/vader-pilot-lego.jpg"
+            alt=""
+            aria-hidden="true"
+          />
           <h3>Produto XYZ</h3>
           <p>R$ 60,00</p>
-          <a href="">Ver produto</a>
+          <a href="#">Ver produto</a>
         </div>
         <div>
-          <img src="" alt="XYZ" />
+          <img src="assets/images/yoda-statue.jpg" alt="" aria-hidden="true" />
           <h3>Produto XYZ</h3>
           <p>R$ 60,00</p>
-          <a href="">Ver produto</a>
+          <a href="#">Ver produto</a>
         </div>
         <div>
-          <img src="" alt="XYZ" />
+          <img
+            src="assets/images/stormtrooper-figure.jpg"
+            alt=""
+            aria-hidden="true"
+          />
           <h3>Produto XYZ</h3>
           <p>R$ 60,00</p>
-          <a href="">Ver produto</a>
+          <a href="#">Ver produto</a>
         </div>
-      </div>
     </section>
 
     <!-- Contato -->
@@ -117,7 +133,13 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-      <p>Desenvolvido por Angela Caldas</p>
+      <a href="https://angelacaldas.vercel.app" aria-labelledby="portfolio">
+        <i class="icon-logo"></i>
+      </a>
+      <p id="portfolio">
+        Desenvolvido por Angela Caldas
+        <span class="sr-only">(Ver portfolio)</span>
+      </p>
       <p>2022</p>
     </footer>
   </body>

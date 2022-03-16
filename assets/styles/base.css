@@ -53,7 +53,7 @@ i {
 .grid {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, 9.75rem);
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   padding: 1rem 0 0;
