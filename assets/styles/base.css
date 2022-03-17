@@ -38,6 +38,11 @@ button {
   font-family: var(--raleway);
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 i {
   font-size: 1.5rem;
 }

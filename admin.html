@@ -26,27 +26,35 @@
         />
       </a>
       <!-- <input type="search" /> -->
-      <a class="button__void button" href="login.html">Login</a>
+      <a class="admin button__void button" href="login.html"
+        >Menu administrador</a
+      >
       <a class="header__search" href="#">
         <i class="icon-search"></i>
       </a>
     </header>
 
-    <!-- Adicionar produto -->
-    <form action="">
-      <fieldset>
-        <legend>Adicionar novo produto</legend>
-        <label for=""></label>
-        <input type="file" src="" alt="" />
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="number" />
-        <label for=""></label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button type="submit">Adicionar produto</button>
-      </fieldset>
-    </form>
+    <section class="admin section container">
+      <!-- Adicionar produto -->
+      <form action="" class="contact__form">
+        <fieldset>
+          <legend>Adicionar novo produto</legend>
+          <label for="product__image"
+            >Adicionar uma imagem para o produto</label
+          >
+          <input type="file" name="" id="product__image" />
+          <label for="product__name">Nome do produto</label>
+          <input type="text" id="product__name" />
+          <label for="product__price">Preço do produto</label>
+          <input type="number" id="product__price" />
+          <label for="product__description">Descrição do produto</label>
+          <textarea name="" id="product__description"></textarea>
+          <button type="submit" class="button__blue button">
+            Adicionar produto
+          </button>
+        </fieldset>
+      </form>
+    </section>
 
     <!-- Contato -->
     <section class="contact container">
@@ -88,7 +96,13 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-      <p>Desenvolvido por Angela Caldas</p>
+      <a href="https://angelacaldas.vercel.app" aria-labelledby="portfolio">
+        <i class="icon-logo"></i>
+      </a>
+      <p id="portfolio">
+        Desenvolvido por Angela Caldas
+        <span class="sr-only">(Ver portfolio)</span>
+      </p>
       <p>2022</p>
     </footer>
   </body>
