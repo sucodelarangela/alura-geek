@@ -1,3 +1,6 @@
+/* ========== IMPORTS ========== */
+@import url(header.css);
+
 /* ========== INDEX.HTML ========== */
 .banner {
   position: relative;

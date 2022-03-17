@@ -18,6 +18,7 @@
   --black-5: #f5f5f5;
   --black-30: #c8c8c8;
   --black-50: #a2a2a2;
+  --black-80: #6b6b6b;
 }
 
 /* Elements */
@@ -58,7 +59,7 @@ i {
 .grid {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 8rem);
   grid-template-rows: auto;
   gap: 1rem;
   padding: 1rem 0 0;
@@ -93,22 +94,6 @@ i {
   clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-/* Header */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.header__logo--img {
-  width: 6.25rem;
-}
-
-.header__search {
-  color: var(--black);
 }
 
 /* Contact */

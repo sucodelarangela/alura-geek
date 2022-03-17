@@ -1,0 +1,16 @@
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo--img {
+  width: 6.25rem;
+}
+
+.header__search {
+  color: var(--black);
+  cursor: pointer;
+}
