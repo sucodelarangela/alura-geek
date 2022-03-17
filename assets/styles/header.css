@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.header__logo {
+  padding: 0;
+}
+
 .header__logo--img {
   width: 6.25rem;
 }
