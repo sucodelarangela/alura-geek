@@ -1,72 +1,13 @@
 /* ========== IMPORTS ========== */
+@import url(base.css);
+@import url(../icons/icons.css);
 @import url(header.css);
+@import url(banner.css);
+@import url(products.css);
+@import url(contact.css);
 
 /* ========== INDEX.HTML ========== */
-.banner {
-  position: relative;
-}
 
-.banner__image {
-  width: 100%;
-  height: 50vw;
-  max-height: 22rem;
-  box-shadow: inset 0 0 150rem black;
-  background: url('/assets/images/banner.jpg') center;
-  background-size: cover;
-}
-
-.banner__text {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  color: var(--white);
-}
-
-.banner__text h1,
-.product h1 {
-  font-size: 1.375rem;
-  font-weight: 700;
-  padding-bottom: 0.5rem;
-}
-
-.banner__text h2 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding-bottom: 0.5rem;
-}
-
-.banner__button {
-  display: flex;
-}
-
-.section__text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.section__text h2 {
-  color: var(--black);
-  font-size: 1.375rem;
-  font-weight: 700;
-}
-
-.section__text a {
-  font-size: 0.875rem;
-  color: var(--blue);
-  font-weight: 700;
-}
-
-.section__text a > i {
-  font-size: 1rem;
-  color: var(--blue);
-}
-
-.products div:nth-child(n + 5) {
-  display: none;
-}
-
-.products img,
 .all__products img {
   min-width: 9.75rem;
   width: 100%;
@@ -75,7 +16,12 @@
   margin-bottom: 0.5rem;
 }
 
-.products h3,
+.product h1 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
 .all__products h3 {
   font-size: 0.875rem;
   font-weight: 500;
@@ -87,19 +33,12 @@
   margin: 0;
 }
 
-.products p,
 .product p,
 .all__products p {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--black);
-}
-
-.products a {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--blue);
 }
 
 /* ========== LOGIN.HTML ========== */

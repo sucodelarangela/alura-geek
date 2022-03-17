@@ -32,6 +32,10 @@ body {
   height: 100vh;
 }
 
+section {
+  background: var(--black-5);
+}
+
 body,
 input,
 textarea,
@@ -39,9 +43,33 @@ button {
   font-family: var(--raleway);
 }
 
+input,
+textarea {
+  font-size: 1rem;
+  color: var(--black);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 0 var(--black-30);
+  padding: 1rem 0.75rem;
+}
+
 button,
 a {
   cursor: pointer;
+}
+
+h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  padding-bottom: 0.5rem;
+}
+
+h3,
+a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 i {
@@ -52,14 +80,10 @@ i {
   padding: 1rem;
 }
 
-.section {
-  background: var(--black-5);
-}
-
 .grid {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fill, 8rem);
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   padding: 1rem 0 0;
@@ -68,20 +92,19 @@ i {
 .button {
   font-size: 0.875rem;
   font-weight: 600;
+  line-height: 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .button__void {
   color: var(--blue);
   background: transparent;
   border: 1px solid var(--blue);
-  padding: 0.75rem 2.97rem;
 }
 
 .button__blue {
   color: var(--white);
   background: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 0.75rem 1rem;
 }
 
 .sr-only {
@@ -96,34 +119,8 @@ i {
   border-width: 0;
 }
 
-/* Contact */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--blue-10);
-}
-
-.contact__links {
-  margin-bottom: 2rem;
-}
-
-.contact__logo--img {
-  width: 11rem;
-}
-
-.contact li {
-  list-style: none;
-  text-align: center;
-  color: var(--black);
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.contact li:last-child {
-  margin: 0;
+fieldset {
+  width: 100%;
 }
 
 form legend {
@@ -133,9 +130,7 @@ form legend {
   margin-bottom: 0.5rem;
 }
 
-.contact__form input,
-.login__form input,
-.contact__form textarea {
+.login__form input {
   display: inline-block;
   width: 100%;
   font-size: 1rem;
@@ -143,30 +138,6 @@ form legend {
   background: var(--white);
   border-radius: 0.25rem;
   box-shadow: 0 1px 0 var(--black-30);
-}
-
-.contact__form input {
-  padding: 0.5rem 0.75rem;
-  padding-top: 1.75rem;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.contact__form textarea {
-  resize: none;
-  padding: 1rem 0.75rem;
-
-  margin-bottom: 0.5rem;
-  min-height: 5.125rem;
-}
-
-.contact__form label {
-  font-size: 0.75rem;
-  color: var(--black-50);
-  margin-top: 0.5rem;
-  margin-left: 0.75rem;
-  position: absolute;
-  z-index: 1;
 }
 
 ::placeholder {

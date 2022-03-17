@@ -1,0 +1,45 @@
+.products div:nth-child(n + 5) {
+  display: none;
+}
+
+.products__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products__text h2 {
+  color: var(--black);
+  padding: 0;
+}
+
+.products__text a,
+.products__card a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--blue);
+  padding: 0;
+}
+
+.products__card img {
+  min-width: 9.75rem;
+  width: 100%;
+  height: 10.875rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.products__card h3 {
+  color: var(--black);
+
+  font-weight: 500;
+}
+
+.products__card p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}

@@ -1,0 +1,27 @@
+.banner {
+  position: relative;
+}
+
+.banner__image {
+  width: 100%;
+  height: 50vw;
+  max-height: 22rem;
+  box-shadow: inset 0 0 150rem black;
+  background: url('/assets/images/banner.jpg') center;
+  background-size: cover;
+}
+
+.banner__text {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: var(--white);
+}
+
+.banner__text h3 {
+  font-weight: 600;
+}
+
+.banner__button {
+  display: flex;
+}

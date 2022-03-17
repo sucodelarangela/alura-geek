@@ -14,3 +14,7 @@
   color: var(--black);
   cursor: pointer;
 }
+
+.header__button {
+  padding: 0.75rem 2.97rem;
+}
