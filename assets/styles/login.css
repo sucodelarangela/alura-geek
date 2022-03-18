@@ -1,0 +1,13 @@
+.login__form legend {
+  text-align: center;
+}
+
+.login__form input {
+  margin-bottom: 1rem;
+}
+
+.login__form .button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 2.125rem;
+}

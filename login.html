@@ -11,15 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles/base.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="stylesheet" href="assets/icons/icons.css" />
   </head>
 
   <body>
     <!-- Cabeçalho -->
     <header class="header container">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo" href="index.html" id="header">
         <img
           class="header__logo--img"
           src="assets/images/logo.svg"
@@ -27,12 +25,12 @@
         />
       </a>
       <!-- <input type="search" /> -->
-      <a class="button__void button" href="login.html">Login</a>
+      <a class="header__button button__void button" href="login.html">Login</a>
       <i class="header__search icon-search"></i>
     </header>
 
     <!-- Login -->
-    <section class="section form container">
+    <section class="login container">
       <form action="" class="login__form">
         <fieldset>
           <legend>Iniciar Sessão</legend>
@@ -55,43 +53,40 @@
       </form>
     </section>
 
-    <!-- Contato -->
-    <section class="contact container">
-      <div class="contact__links">
-        <a class="contact__logo" href="#home">
-          <img
-            class="contact__logo--img"
-            src="assets/images/logo.svg"
-            alt="Loja Alura Geek"
-          />
-        </a>
-        <ul>
-          <li>Quem somos nós</li>
-          <li>Política de privacidade</li>
-          <li>Programa fidelidade</li>
-          <li>Nossas lojas</li>
-          <li>Quero ser franqueado</li>
-          <li>Anuncie aqui</li>
-        </ul>
-      </div>
+      <!-- Contato -->
+      <section class="contact container">
+        <div class="contact__links">
+          <a class="contact__links--logo" href="#header">
+            <img src="assets/images/logo.svg" alt="Loja Alura Geek" />
+          </a>
+          <ul>
+            <li><a href="#">Quem somos nós</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Programa fidelidade</a></li>
+            <li><a href="#">Nossas lojas</a></li>
+            <li><a href="#">Quero ser franqueado</a></li>
+            <li><a href="#">Anuncie aqui</a></li>
+          </ul>
+        </div>
 
-      <form action="" class="contact__form">
-        <fieldset>
-          <legend>Fale conosco</legend>
-          <label for="name" aria-label="Digite seu nome">Nome</label>
-          <input id="name" type="text" />
-          <label for="message" class="sr-only">Escreva sua mensagem:</label>
-          <textarea
-            name=""
-            id="message"
-            placeholder="Escreva sua mensagem"
-          ></textarea>
-          <button type="submit" class="button__blue button">
-            Enviar mensagem
-          </button>
-        </fieldset>
-      </form>
-    </section>
+        <form action="" class="contact__form">
+          <fieldset>
+            <legend>Fale conosco</legend>
+            <label for="name" class="sr-only">Escreva seu nome</label>
+            <input id="name" type="text" placeholder="Nome" />
+            <label for="message" class="sr-only">Escreva sua mensagem</label>
+            <textarea
+              name=""
+              id="message"
+              placeholder="Escreva sua mensagem"
+            ></textarea>
+            <button type="submit" class="button__blue button">
+              Enviar mensagem
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
 
     <!-- Rodapé -->
     <footer class="footer">

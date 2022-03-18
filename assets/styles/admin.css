@@ -1,0 +1,22 @@
+.admin .contact__form legend {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  margin-bottom: 1rem;
+}
+
+.admin .contact__form input {
+  color: var(--black);
+  background: var(--white);
+}
+
+.admin .contact__form textarea {
+  margin-bottom: 1rem;
+}
+
+.admin .contact__form button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}

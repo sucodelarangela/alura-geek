@@ -2,9 +2,12 @@
 @import url(base.css);
 @import url(../icons/icons.css);
 @import url(header.css);
+@import url(login.css);
+@import url(admin.css);
 @import url(banner.css);
 @import url(products.css);
 @import url(contact.css);
+@import url(footer.css);
 
 /* ========== INDEX.HTML ========== */
 
@@ -41,26 +44,6 @@
   color: var(--black);
 }
 
-/* ========== LOGIN.HTML ========== */
-.section.form {
-  padding: 6rem 2.5rem;
-}
-
-.login__form legend {
-  text-align: center;
-}
-
-.login__form input {
-  padding: 1rem 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.login__form .button {
-  display: block;
-  margin: 0 auto;
-  padding: 0.75rem 2.125rem;
-}
-
 /* ========== PRODUCT PAGE ========== */
 .product__image {
   width: 100%;
@@ -90,15 +73,4 @@
 }
 .add__product {
   display: flex;
-}
-
-/* ========== ADMIN ========== */
-.admin.button__void {
-  padding: 0.75rem 1rem;
-}
-
-.admin .contact__form .button__blue {
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }

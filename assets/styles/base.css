@@ -76,6 +76,17 @@ i {
   font-size: 1.5rem;
 }
 
+fieldset {
+  width: 100%;
+}
+
+form legend {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
 .container {
   padding: 1rem;
 }
@@ -119,47 +130,7 @@ i {
   border-width: 0;
 }
 
-fieldset {
-  width: 100%;
-}
-
-form legend {
-  font-size: 1rem;
-  color: var(--black);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.login__form input {
-  display: inline-block;
-  width: 100%;
-  font-size: 1rem;
-  color: var(--black);
-  background: var(--white);
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 0 var(--black-30);
-}
-
 ::placeholder {
   font-size: 1rem;
   color: var(--black-50);
-}
-
-/* Footer */
-.footer {
-  padding: 2rem;
-}
-
-.footer,
-.footer a {
-  background: var(--white);
-  text-align: center;
-  align-items: center;
-  color: var(--black);
-  transition: 0.3s;
-}
-
-.footer a:hover,
-.footer a:focus {
-  color: var(--blue);
 }
