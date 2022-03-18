@@ -87,6 +87,10 @@ form legend {
   margin-bottom: 0.5rem;
 }
 
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 .container {
   padding: 1rem;
 }
@@ -133,4 +137,16 @@ form legend {
 ::placeholder {
   font-size: 1rem;
   color: var(--black-50);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 2rem 9.5rem;
+  }
 }
