@@ -17,14 +17,24 @@
   <body>
     <!-- Cabeçalho -->
     <header class="header container">
-      <a class="header__logo" href="index.html" id="header">
-        <img
-          class="header__logo--img"
-          src="assets/images/logo.svg"
-          alt="Loja Alura Geek"
+      <div>
+        <a class="header__logo" href="index.html" id="header">
+          <img
+            class="header__logo--img"
+            src="assets/images/logo.svg"
+            alt="Loja Alura Geek"
+          />
+        </a>
+        <label for="h__input" class="sr-only">
+          Digite o que deseja encontrar
+        </label>
+        <input
+          type="search"
+          id="h__input"
+          class="header__input"
+          placeholder="O que deseja encontrar?"
         />
-      </a>
-      <!-- <input type="search" /> -->
+      </div>
       <a class="header__button button__void button" href="login.html">Login</a>
       <i class="header__search icon-search"></i>
     </header>
