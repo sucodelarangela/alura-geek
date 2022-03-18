@@ -28,6 +28,10 @@
   padding: 0;
 }
 
+.products__text a i {
+  font-size: 1rem;
+}
+
 .products__card img,
 .products__card--all img {
   min-width: 9.75rem;
@@ -113,4 +117,21 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .products__text a,
+  .products__card a {
+    font-size: 1rem;
+  }
+
+  .products__text a i {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .products .products__card div:nth-child(n + 5) {
+    display: grid;
+  }
 }
