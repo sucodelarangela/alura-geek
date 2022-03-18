@@ -9,31 +9,10 @@
 @import url(contact.css);
 @import url(footer.css);
 
-/* ========== INDEX.HTML ========== */
-
-.all__products img {
-  min-width: 9.75rem;
-  width: 100%;
-  height: 10.875rem;
-  object-fit: cover;
-  margin-bottom: 0.5rem;
-}
-
 .product h1 {
   font-size: 1.375rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
-}
-
-.all__products h3 {
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: var(--black);
-}
-
-.all__products div h3:last-child {
-  margin: 0;
 }
 
 .product p,
@@ -65,12 +44,4 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: var(--black);
-}
-
-/* ========== ALL PRODUCTS PAGE ========== */
-.all__products h2 {
-  padding-bottom: 1rem;
-}
-.add__product {
-  display: flex;
 }
