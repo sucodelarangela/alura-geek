@@ -75,3 +75,42 @@
 .icon-delete {
   margin-right: 1rem;
 }
+
+/* ========== SINGLE PRODUCT PAGE ========== */
+
+.product h1 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.product p,
+.all__products p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+/* ========== PRODUCT PAGE ========== */
+.product__image {
+  height: 50vw;
+  max-height: 16.25rem;
+}
+
+.product__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product h2 {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.product .product__description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--black);
+}
