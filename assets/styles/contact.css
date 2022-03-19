@@ -86,8 +86,7 @@
   .contact.container {
     padding: 2rem 9.5rem;
   }
-
-  .contact__links {
+  gi .contact__links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
