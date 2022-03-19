@@ -44,10 +44,12 @@
       <form action="" class="contact__form">
         <fieldset>
           <legend>Adicionar novo produto</legend>
-          <label for="product__image"
-            >Adicionar uma imagem para o produto</label
-          >
-          <input type="file" name="" id="product__image" />
+          <div>
+            <div class="drag-n-drop"></div>
+            <span>ou</span>
+            <label for="product__image" class="product__image--label"></label>
+            <input type="file" name="" id="product__image" accept="image/*" />
+          </div>
           <label for="product__name" class="sr-only">Nome do produto</label>
           <input type="text" id="product__name" placeholder="Nome do produto" />
           <label for="product__price" class="sr-only">Preço do produto</label>
