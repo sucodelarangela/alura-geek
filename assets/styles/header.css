@@ -59,4 +59,8 @@
   .header__logo--img {
     width: 11rem;
   }
+
+  .header__button {
+    padding: 1rem 2.97rem;
+  }
 }
