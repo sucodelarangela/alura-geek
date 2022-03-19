@@ -1,15 +1,37 @@
+.login.container {
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+
+.login__form {
+  display: flex;
+  justify-content: center;
+}
+
 .login__form legend {
-  text-align: center;
+  margin: 0 auto 1rem;
 }
 
 .login__form input {
-  display: flex;
-  width: 100%;
-  margin-bottom: 1rem;
+  display: block;
+  width: 17.1875rem;
+  margin: 0 auto 1rem;
 }
 
 .login__form .button {
   display: block;
   margin: 0 auto;
   padding: 0.75rem 2.125rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .login.container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .login__form input {
+    width: 40%;
+    margin: 0 auto 1rem;
+  }
 }
