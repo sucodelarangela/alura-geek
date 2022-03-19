@@ -120,6 +120,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .products__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .products__text--all h2 {
+    margin: 0;
+  }
+
   .products__text a,
   .products__card a {
     font-size: 1rem;
