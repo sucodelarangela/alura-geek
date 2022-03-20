@@ -162,35 +162,3 @@ input[type='number'] {
   font-size: 1rem;
   color: var(--black-50);
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 1rem 2rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 2rem 9.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 2.3125rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .button {
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1rem;
-    padding: 1rem 1rem;
-  }
-}

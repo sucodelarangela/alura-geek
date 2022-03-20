@@ -23,15 +23,3 @@
   margin: 0 auto;
   padding: 0.75rem 2.125rem;
 }
-
-@media screen and (min-width: 1440px) {
-  .login.container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .login__form input {
-    width: 40%;
-    margin: 0 auto 1rem;
-  }
-}

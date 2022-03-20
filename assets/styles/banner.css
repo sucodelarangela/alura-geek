@@ -25,29 +25,3 @@
 .banner__button {
   display: flex;
 }
-
-@media screen and (min-width: 768px) {
-  .banner__text {
-    left: 2rem;
-    bottom: 2rem;
-  }
-
-  .banner__text h2 {
-    font-size: 3.25rem;
-    line-height: 3.8125rem;
-    padding-bottom: 1rem;
-  }
-
-  .banner__text h3 {
-    font-size: 1.375rem;
-    font-weight: 700;
-    line-height: 1.5625rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .banner__text {
-    left: 9.5rem;
-  }
-}
