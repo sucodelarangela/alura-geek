@@ -7,21 +7,22 @@
     <meta
       name="image"
       property="og:image"
-      content="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/assets/images/og-image.png"
+      content="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master//images/og-image.png"
     />
     <meta name="author" content="Angela Caldas" />
     <meta
       name="description"
       content="E-commerce page for an online store for geek products which will be developed as result of a Front-End Challenge (3rd edition) exclusively for students of Alura Tech School."
     />
-    <title>Alura Geek | Login</title>
+    <link rel="icon" href="images/pacman.svg" type="image/icon type" />
+    <title>Alura Geek | Produto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
   </head>
 
   <body>
@@ -31,7 +32,7 @@
         <a class="header__logo" href="index.html" id="header">
           <img
             class="header__logo--img"
-            src="assets/images/logo.svg"
+            src="/images/logo.svg"
             alt="Loja Alura Geek"
           />
         </a>
@@ -49,35 +50,90 @@
       <i class="header__search icon-search"></i>
     </header>
 
-    <!-- Login -->
-    <section class="login container">
-      <form action="" class="login__form">
-        <fieldset>
-          <legend>Iniciar Sessão</legend>
-          <label for="email" class="sr-only">Escreva seu email</label>
-          <input
-            type="email"
-            name=""
-            id="email"
-            placeholder="Escreva seu email"
+    <!-- Produto -->
+    <section class="product__image">
+      <img src="/images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
+    </section>
+
+    <section class="product container">
+      <img src="/images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
+      <div>
+        <h2>Produto XYZ</h2>
+        <p>R$ 60,00</p>
+        <p class="product__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+          laboriosam nemo repellendus iure officia suscipit delectus eius esse
+          eligendi cupiditate expedita eum quaerat, voluptatem similique!
+          Commodi consequuntur voluptates voluptatem dignissimos.
+        </p>
+      </div>
+    </section>
+
+    <section class="products container">
+      <div class="products__text">
+        <h2>Produtos similares</h2>
+      </div>
+      <div class="products__card grid">
+        <div>
+          <img
+            src="/images/xbox-one-white-controller.jpg"
+            alt=""
+            aria-hidden="true"
           />
-          <label for="" class="sr-only">Escreva sua senha</label>
-          <input
-            type="password"
-            name=""
-            id=""
-            placeholder="Escreva sua senha"
+          <h3>Controle XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+        <div>
+          <img
+            src="/images/vader-pilot-lego.jpg"
+            alt=""
+            aria-hidden="true"
           />
-          <button type="submit" class="button__blue button" onclick="javascript:window.open('all-products.html')">Entrar</button>
-        </fieldset>
-      </form>
+          <h3>Produto XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+        <div>
+          <img src="/images/yoda-statue.jpg" alt="" aria-hidden="true" />
+          <h3>Produto XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+        <div>
+          <img
+            src="/images/stormtrooper-figure.jpg"
+            alt=""
+            aria-hidden="true"
+          />
+          <h3>Produto XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+        <div>
+          <img src="/images/baby-yoda.jpg" alt="" aria-hidden="true" />
+          <h3>Produto XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+        <div>
+          <img
+            src="/images/kylo-figure.jpg"
+            alt=""
+            aria-hidden="true"
+          />
+          <h3>Produto XYZ</h3>
+          <p>R$ 60,00</p>
+          <a href="#">Ver produto</a>
+        </div>
+
     </section>
 
       <!-- Contato -->
       <section class="contact container">
         <div class="contact__links">
           <a class="contact__links--logo" href="#header">
-            <img src="assets/images/logo.svg" alt="Loja Alura Geek" />
+            <img src="/images/logo.svg" alt="Loja Alura Geek" />
           </a>
           <ul>
             <li><a href="#">Quem somos nós</a></li>
