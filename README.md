@@ -3,14 +3,14 @@
 _For the English version of this README, click [here](#English)._
 
 <div align='center'>
-  <figure>
-    <a href='https://alura-geek.vercel.app/' target='_blank'>
-      <img src='https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/assets/images/og-image.png'>
-    </a>
-    <figcaption>Para testar o site, basta clicar na imagem! ^^</figcaption>
+  <!-- <figure>
+    <a href='https://alura-geek.vercel.app/' target='_blank'> -->
+      <img src='https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/html/assets/images/og-image.png'>
+    <!-- </a> -->
+    <!-- <figcaption>Para testar o site, basta clicar na imagem! ^^</figcaption> -->
   </figure>
   
-![GitHub deployments](https://img.shields.io/github/deployments/sucodelarangela/alura-geek/Production?style=flat-square)
+<!-- ![GitHub deployments](https://img.shields.io/github/deployments/sucodelarangela/alura-geek/Production?style=flat-square) -->
   
 </div>
 
@@ -50,7 +50,11 @@ O Desafio começou em 14 de março de 2022.
 
 ---
 
-<div id="English" style="font-style: italic;">English version</div>
+<div id="English" style="font-style: italic;">
+
+_English version_
+
+</div>
 
 ## 🔎 Overview
 
