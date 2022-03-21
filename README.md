@@ -32,8 +32,8 @@ O Desafio começou em 14 de março de 2022.
 
 ## 📈 Andamento do projeto
 
-- **Semana 1 (atual):** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS. No HTML, em breve será implementado a mudança dinâmica das páginas com EJS.
-- **Semana 2 (em breve)**
+- **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
+- **Semana 2 (atual):** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
 - **Semana 3 (em breve)**
 - **Semana 4 (em breve)**
 
@@ -43,6 +43,9 @@ O Desafio começou em 14 de março de 2022.
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
 </div>
 
 ---
@@ -67,8 +70,8 @@ The Challenge started at March 14th, 2022.
 
 ## 📈 Project status
 
-- **Week 1 (current):** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
-- **Week 2 (coming soon)**
+- **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
+- **Week 2 (current):** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 - **Week 3 (coming soon)**
 - **Week 4 (coming soon)**
 
@@ -78,4 +81,7 @@ The Challenge started at March 14th, 2022.
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
 </div>
