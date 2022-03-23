@@ -14,6 +14,8 @@
   --white: #ffffff;
   --blue: #2a7ae4;
   --blue-10: #eaf2fd;
+  --blue-20: #d4e4fa;
+  --blue-80: #5595e9;
   --black: #464646;
   --black-5: #f5f5f5;
   --black-30: #c8c8c8;
@@ -115,6 +117,7 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+/* Classes */
 .container {
   padding: 1rem;
 }
@@ -139,11 +142,23 @@ input[type='number'] {
   color: var(--blue);
   background: transparent;
   border: 1px solid var(--blue);
+  transition: background 0.3s;
+}
+
+.button__void:hover,
+.button__void:focus {
+  background: var(--blue-20);
 }
 
 .button__blue {
   color: var(--white);
   background: var(--blue);
+  transition: background 0.3s;
+}
+
+.button__blue:hover,
+.button__blue:focus {
+  background: var(--blue-80);
 }
 
 .sr-only {
