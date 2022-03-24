@@ -23,7 +23,7 @@ input[type='file'] {
   color: var(--black-50);
   margin-bottom: 1rem;
   border: 1px dashed var(--black-30);
-  background-image: url('/assets/images/plus.svg');
+  background-image: url('/images/plus.svg');
   background-repeat: no-repeat;
   background-position: center 40%;
   cursor: pointer;
