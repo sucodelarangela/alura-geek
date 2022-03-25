@@ -21,6 +21,8 @@
   --black-30: #c8c8c8;
   --black-50: #a2a2a2;
   --black-80: #6b6b6b;
+  --red: #e83f5b;
+  --red-80: #ec697f;
 }
 
 /* Elements */
@@ -159,6 +161,17 @@ input[type='number'] {
 .button__blue:hover,
 .button__blue:focus {
   background: var(--blue-80);
+}
+
+.button__red {
+  color: var(--white);
+  background: var(--red);
+  transition: background 0.3s;
+}
+
+.button__red:hover,
+.button__red:focus {
+  background: var(--red-80);
 }
 
 .sr-only {

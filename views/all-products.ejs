@@ -315,5 +315,27 @@
       </p>
       <p>2022</p>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper active">
+      <div class="modal">
+        <h2>Excluir produto</h2>
+        <p>Tem certeza que você deseja excluir este produto?</p>
+        <form action="#" method="POST">
+          <!-- Method POST para envio dos dados ao backend. O action será definido pelo JS -->
+          <label class="sr-only" for="password">Confirme sua senha admin</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Confirme sua senha"
+          />
+          <div class="buttons">
+            <div class="button button__blue cancel">Cancelar</div>
+            <button class="button button__red">Sim, excluir</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
