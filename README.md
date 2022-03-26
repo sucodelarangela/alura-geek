@@ -37,6 +37,15 @@ O Desafio começou em 14 de março de 2022.
 - **Semana 3 (em breve)**
 - **Semana 4 (em breve)**
 
+## ⚙️ Como usar
+
+Você pode testar a página clicando na imagem no topo deste README. Ou, se desejar, faça o download deste repositório e, com o seu terminal, entre no diretório do projeto e siga os passos abaixo:
+
+1. Rode o comando `npm install` para instalar as dependências;
+<!-- 2. Depois, rode o comando `npm run init-db` para instalar o banco de dados -->
+2. Para iniciar a aplicação, rode o comando `npm start`.
+
+
 ## 💻 Linguagens, bibliotecas e/ou API's utilizadas (até o momento):
 
 <div>
@@ -78,6 +87,14 @@ The Challenge started at March 14th, 2022.
 - **Week 2 (current):** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 - **Week 3 (coming soon)**
 - **Week 4 (coming soon)**
+
+## ⚙️ How to use it
+
+You can test the page by clicking the image on the top of this README. Or, if you prefer, download this repository, run your terminal inside the project directory and follow the steps below:
+
+1. Run the command `npm install` to install the dependencies;
+<!-- 2. Then, run the command `npm run init-db` to install the database; -->
+2. Finally, start the application by running the command `npm start`.
 
 ## 💻 Languages, libs and/or API's used (until now):
 
