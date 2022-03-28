@@ -63,12 +63,10 @@
               id="email"
               class=""
               placeholder="Escreva seu email"
-              data-type="login"
+              data-type="email"
               required
             />
-            <span role="alert">
-              Verifique se o e-mail foi informado corretamente
-            </span>
+            <span role="alert"></span>
             <label for="password" class="sr-only">Escreva sua senha</label>
             <input
               type="password"
@@ -76,14 +74,11 @@
               id="password"
               class=""
               placeholder="Escreva sua senha"
-              data-type="login"
+              data-type="password"
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$"
               required
             />
-            <span role="alert">
-              A senha deve conter entre 6 e 12 caracteres e deve incluir, pelo
-              menos, uma letra maiúscula, um número e não deve conter símbolos.
-            </span>
+            <span role="alert"></span>
             <button type="submit" class="button__blue button">Entrar</button>
           </fieldset>
         </form>
@@ -119,7 +114,7 @@
             placeholder="Nome"
             required
           />
-          <span role="alert">O limite de 40 caracteres foi alcançado.</span>
+          <span role="alert"></span>
           <label for="message" class="sr-only">Escreva sua mensagem</label>
           <textarea
             name=""
@@ -130,7 +125,7 @@
             maxlength="120"
             required
           ></textarea>
-          <span role="alert">O limite de 120 caracteres foi alcançado.</span>
+          <span role="alert"></span>
           <button type="submit" class="button__blue button">
             Enviar mensagem
           </button>

@@ -1,6 +1,6 @@
-import {validate} from './validation.js'
+import {validate, checkLength} from './validation.js'
 
-const loginInputs = document.querySelectorAll('[data-type="login"')
+const loginInputs = document.querySelectorAll('[data-type]')
 
 loginInputs.forEach(input => {
   input.addEventListener('blur', event => {
@@ -8,10 +8,16 @@ loginInputs.forEach(input => {
   })
 })
 
-const contactInputs = document.querySelectorAll('[data-type="contact"')
+const contactInputs = document.querySelectorAll('[data-type="contact"]')
 
 contactInputs.forEach(input => {
   input.addEventListener('keyup', event => {
-    validate(event.target)
+    checkLength(event.target)
+  })
+})
+
+contactInputs.forEach(input => {
+  input.addEventListener('blur', () => {
+    input.classList.remove('error')
   })
 })
