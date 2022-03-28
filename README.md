@@ -43,8 +43,10 @@ Você pode testar a página clicando na imagem no topo deste README. Ou, se dese
 
 1. Rode o comando `npm install` para instalar as dependências;
 <!-- 2. Depois, rode o comando `npm run init-db` para instalar o banco de dados -->
-2. Para iniciar a aplicação, rode o comando `npm start`.
-
+2. Para iniciar a aplicação, rode o comando `npm start`;
+3. Para fazer o login de administrador na página, utilize os seguintes dados:
+   - E-mail: `test@test.com`
+   - Senha: `123456Az`
 
 ## 💻 Linguagens, bibliotecas e/ou API's utilizadas (até o momento):
 
@@ -94,7 +96,10 @@ You can test the page by clicking the image on the top of this README. Or, if yo
 
 1. Run the command `npm install` to install the dependencies;
 <!-- 2. Then, run the command `npm run init-db` to install the database; -->
-2. Finally, start the application by running the command `npm start`.
+2. Finally, start the application by running the command `npm start`;
+3. To login as administrator and have access to the rest of the application, use the following data:
+   - E-mail: `test@test.com`
+   - Password: `123456Az`
 
 ## 💻 Languages, libs and/or API's used (until now):
 

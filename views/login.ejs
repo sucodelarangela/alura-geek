@@ -62,6 +62,7 @@
               name=""
               id="email"
               placeholder="Escreva seu email"
+              required
             />
             <label for="" class="sr-only">Escreva sua senha</label>
             <input
@@ -69,6 +70,9 @@
               name=""
               id=""
               placeholder="Escreva sua senha"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$"
+              title="A senha deve conter entre 6 e 12 caracteres e deve incluir, pelo menos, uma letra maiúscula, um número e não deve conter símbolos."
+              required
             />
             <button type="submit" class="button__blue button">Entrar</button>
           </fieldset>
