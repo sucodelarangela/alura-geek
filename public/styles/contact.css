@@ -54,3 +54,24 @@
   margin-bottom: 0.5rem;
   min-height: 5.125rem;
 }
+
+.contact__form input.error,
+.contact__form textarea.error {
+  border: 1px solid var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.contact__form input + span,
+.contact__form textarea + span {
+  display: none;
+}
+
+.contact__form input.error + span,
+.contact__form textarea.error + span {
+  display: flex;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 0.875rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}

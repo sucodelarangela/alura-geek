@@ -130,7 +130,7 @@
       </section>
     </main>
 
-      <!-- Contato -->
+    <!-- Contato -->
     <section class="contact container">
       <div class="contact__links">
         <a class="contact__links--logo" href="#header">
@@ -150,13 +150,27 @@
         <fieldset>
           <legend>Fale conosco</legend>
           <label for="name" class="sr-only">Escreva seu nome</label>
-          <input id="name" type="text" placeholder="Nome" />
+          <input
+            id="name"
+            type="text"
+            class=""
+            data-type="contact"
+            maxlength="40"
+            placeholder="Nome"
+            required
+          />
+          <span role="alert">O limite de 40 caracteres foi alcançado.</span>
           <label for="message" class="sr-only">Escreva sua mensagem</label>
           <textarea
             name=""
             id="message"
+            class=""
+            data-type="contact"
             placeholder="Escreva sua mensagem"
+            maxlength="120"
+            required
           ></textarea>
+          <span role="alert">O limite de 120 caracteres foi alcançado.</span>
           <button type="submit" class="button__blue button">
             Enviar mensagem
           </button>
@@ -166,7 +180,11 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-      <a href="https://angelacaldas.vercel.app" target="_blank" aria-labelledby="portfolio">
+      <a
+        href="https://angelacaldas.vercel.app"
+        target="_blank"
+        aria-labelledby="portfolio"
+      >
         <i class="icon-logo"></i>
       </a>
       <p id="portfolio">
@@ -175,5 +193,7 @@
       </p>
       <p>2022</p>
     </footer>
+
+    <script type="module" src="/scripts/forms.js"></script>
   </body>
 </html>
