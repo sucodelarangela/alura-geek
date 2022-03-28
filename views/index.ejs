@@ -226,31 +226,43 @@
     <section class="contact container">
       <div class="contact__links">
         <a class="contact__links--logo" href="#header">
-          <img src="images/logo.svg" alt="Loja Alura Geek" />
+          <img src="/images/logo.svg" alt="Loja Alura Geek" />
         </a>
-        <div>
-          <ul>
-            <li><a href="#">Quem somos nós</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-            <li><a href="#">Programa fidelidade</a></li>
-            <li><a href="#">Nossas lojas</a></li>
-            <li><a href="#">Quero ser franqueado</a></li>
-            <li><a href="#">Anuncie aqui</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#">Quem somos nós</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Programa fidelidade</a></li>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Quero ser franqueado</a></li>
+          <li><a href="#">Anuncie aqui</a></li>
+        </ul>
       </div>
 
       <form action="" class="contact__form">
         <fieldset>
           <legend>Fale conosco</legend>
           <label for="name" class="sr-only">Escreva seu nome</label>
-          <input id="name" type="text" placeholder="Nome" />
+          <input
+            id="name"
+            type="text"
+            class=""
+            data-type="contact"
+            maxlength="40"
+            placeholder="Nome"
+            required
+          />
+          <span role="alert">O limite de 40 caracteres foi alcançado.</span>
           <label for="message" class="sr-only">Escreva sua mensagem</label>
           <textarea
             name=""
             id="message"
+            class=""
+            data-type="contact"
             placeholder="Escreva sua mensagem"
+            maxlength="120"
+            required
           ></textarea>
+          <span role="alert">O limite de 120 caracteres foi alcançado.</span>
           <button type="submit" class="button__blue button">
             Enviar mensagem
           </button>
@@ -273,5 +285,7 @@
       </p>
       <p>2022</p>
     </footer>
+
+    <script type="module" src="/scripts/forms.js"></script>
   </body>
 </html>

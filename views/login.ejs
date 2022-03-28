@@ -61,19 +61,29 @@
               type="email"
               name=""
               id="email"
+              class=""
               placeholder="Escreva seu email"
+              data-type="login"
               required
             />
-            <label for="" class="sr-only">Escreva sua senha</label>
+            <span role="alert">
+              Verifique se o e-mail foi informado corretamente
+            </span>
+            <label for="password" class="sr-only">Escreva sua senha</label>
             <input
               type="password"
               name=""
-              id=""
+              id="password"
+              class=""
               placeholder="Escreva sua senha"
+              data-type="login"
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$"
-              title="A senha deve conter entre 6 e 12 caracteres e deve incluir, pelo menos, uma letra maiúscula, um número e não deve conter símbolos."
               required
             />
+            <span role="alert">
+              A senha deve conter entre 6 e 12 caracteres e deve incluir, pelo
+              menos, uma letra maiúscula, um número e não deve conter símbolos.
+            </span>
             <button type="submit" class="button__blue button">Entrar</button>
           </fieldset>
         </form>
@@ -100,13 +110,27 @@
         <fieldset>
           <legend>Fale conosco</legend>
           <label for="name" class="sr-only">Escreva seu nome</label>
-          <input id="name" type="text" placeholder="Nome" />
+          <input
+            id="name"
+            type="text"
+            class=""
+            data-type="contact"
+            maxlength="40"
+            placeholder="Nome"
+            required
+          />
+          <span role="alert">O limite de 40 caracteres foi alcançado.</span>
           <label for="message" class="sr-only">Escreva sua mensagem</label>
           <textarea
             name=""
             id="message"
+            class=""
+            data-type="contact"
             placeholder="Escreva sua mensagem"
+            maxlength="120"
+            required
           ></textarea>
+          <span role="alert">O limite de 120 caracteres foi alcançado.</span>
           <button type="submit" class="button__blue button">
             Enviar mensagem
           </button>
@@ -129,5 +153,7 @@
       </p>
       <p>2022</p>
     </footer>
+
+    <script type="module" src="/scripts/forms.js"></script>
   </body>
 </html>

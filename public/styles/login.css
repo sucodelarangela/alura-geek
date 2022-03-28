@@ -18,6 +18,24 @@
   margin: 0 auto 1rem;
 }
 
+.login__form input + span {
+  display: none;
+}
+
+.login__form input.error {
+  border: 1px solid var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.login__form input.error + span {
+  display: flex;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 0.875rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
 .login__form .button {
   display: block;
   margin: 0 auto;
