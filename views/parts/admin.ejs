@@ -1,0 +1,47 @@
+<section class="admin container">
+  <!-- Adicionar produto -->
+  <form action="" class="contact__form">
+    <fieldset>
+      <legend>Adicionar novo produto</legend>
+      <div>
+        <div class="drag-n-drop"></div>
+        <span>ou</span>
+        <label for="product__image" class="product__image--label"></label>
+        <input type="file" name="" id="product__image" accept="image/*" />
+      </div>
+      <label for="product__name" class="sr-only">Nome do produto</label>
+      <input
+        type="text"
+        id="product__name"
+        placeholder="Nome do produto"
+        data-type="name"
+        required
+      />
+      <span role="alert"></span>
+      <label for="product__price" class="sr-only">Preço do produto</label>
+      <input
+        type="text"
+        inputmode="numeric"
+        id="product__price"
+        placeholder="Preço do produto"
+        data-type="price"
+        required
+      />
+      <span role="alert"></span>
+      <label for="product__description" class="sr-only"
+        >Descrição do produto</label
+      >
+      <textarea
+        name=""
+        id="product__description"
+        placeholder="Descrição do produto"
+        data-type="description"
+        required
+      ></textarea>
+      <span role="alert"></span>
+      <button type="submit" class="button__blue button">
+        Adicionar produto
+      </button>
+    </fieldset>
+  </form>
+</section>
