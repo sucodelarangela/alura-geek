@@ -40,7 +40,7 @@ const errorMsgs = {
       'A senha deve conter entre 6 e 12 caracteres e deve incluir, pelo menos, uma letra maiúscula, um número e não deve conter símbolos.'
   },
   contact: {
-    valueMissing: ''
+    valueMissing: valueMissing
   },
   name: {
     valueMissing: valueMissing

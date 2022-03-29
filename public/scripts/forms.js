@@ -38,7 +38,7 @@ contactInputs.forEach(input => {
 })
 
 contactInputs.forEach(input => {
-  input.addEventListener('blur', () => {
-    input.classList.remove('error')
+  input.addEventListener('blur', event => {
+    validate(event.target)
   })
 })
