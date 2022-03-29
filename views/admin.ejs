@@ -71,13 +71,20 @@
               type="text"
               id="product__name"
               placeholder="Nome do produto"
+              data-type="name"
+              required
             />
+            <span role="alert"></span>
             <label for="product__price" class="sr-only">Preço do produto</label>
             <input
-              type="number"
+              type="text"
+              inputmode="numeric"
               id="product__price"
               placeholder="Preço do produto"
+              data-type="price"
+              required
             />
+            <span role="alert"></span>
             <label for="product__description" class="sr-only"
               >Descrição do produto</label
             >
@@ -85,7 +92,10 @@
               name=""
               id="product__description"
               placeholder="Descrição do produto"
+              data-type="description"
+              required
             ></textarea>
+            <span role="alert"></span>
             <button type="submit" class="button__blue button">
               Adicionar produto
             </button>
@@ -159,5 +169,6 @@
     </footer>
 
     <script type="module" src="/scripts/forms.js"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
   </body>
 </html>
