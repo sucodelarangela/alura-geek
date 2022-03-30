@@ -7,13 +7,19 @@ const ProductController = require('./controllers/ProductController.js')
 const route = express.Router()
 
 // defining get routes
-route.get('/', (req, res) => res.render('index', {page: 'main'}))
-route.get('/produto', (req, res) => res.render('index', {page: 'product'}))
-route.get('/login', (req, res) => res.render('index', {page: 'login'}))
-route.get('/todos-os-produtos', (req, res) =>
-  res.render('index', {page: 'all-products'})
+route.get('/', (req, res) => res.render('index', {page: 'main', title: 'Home'}))
+route.get('/produto', (req, res) =>
+  res.render('index', {page: 'product', title: 'Produto'})
 )
-route.get('/admin', (req, res) => res.render('index', {page: 'admin'}))
+route.get('/login', (req, res) =>
+  res.render('index', {page: 'login', title: 'Login'})
+)
+route.get('/todos-os-produtos', (req, res) =>
+  res.render('index', {page: 'all-products', title: 'Produtos'})
+)
+route.get('/admin', (req, res) =>
+  res.render('index', {page: 'admin', title: 'Administrador'})
+)
 
 // defining post routes
 route.post('/todos-os-produtos/:code', ProductController.index)
