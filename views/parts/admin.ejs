@@ -49,6 +49,27 @@
         required
       ></textarea>
       <span role="alert"></span>
+      <label for="product__image--alt" class="sr-only"
+        >Texto alternativo para a imagem</label
+      >
+      <textarea
+        name=""
+        id="product__image--alt"
+        placeholder="Texto alternativo"
+        data-type="alternate"
+        required
+      ></textarea>
+      <span role="alert"></span>
+      <label for="product__category" class="sr-only"
+        >Categoria do produto</label
+      >
+      <select name="" id="product__category" data-type="category" required>
+        <option value="" selected disabled>Selecione uma categoria:</option>
+        <option value="star-wars">Star Wars</option>
+        <option value="videogames">Video Games</option>
+        <option value="diversos">Diversos</option>
+      </select>
+      <span role="alert"></span>
       <button type="submit" class="button__blue button">
         Adicionar produto
       </button>

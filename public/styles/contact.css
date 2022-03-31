@@ -40,12 +40,12 @@
   width: 100%;
 }
 
-.contact__form input,
+.contact__form input, .contact__form select,
 .contact__form textarea {
   width: 100%;
 }
 
-.contact__form input {
+.contact__form input, .contact__form select {
   margin-bottom: 1rem;
 }
 
@@ -56,17 +56,20 @@
 }
 
 .contact__form input.error,
+.contact__form select.error,
 .contact__form textarea.error {
   border: 1px solid var(--red);
   margin-bottom: 0.5rem;
 }
 
 .contact__form input + span,
+.contact__form select + span,
 .contact__form textarea + span {
   display: none;
 }
 
 .contact__form input.error + span,
+.contact__form select.error + span,
 .contact__form textarea.error + span {
   display: flex;
   color: var(--red);

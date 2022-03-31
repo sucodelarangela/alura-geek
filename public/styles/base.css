@@ -54,12 +54,12 @@ section {
 
 body,
 input,
-textarea,
+textarea, select,
 button {
   font-family: var(--raleway);
 }
 
-input,
+input, select,
 textarea {
   font-size: 1rem;
   color: var(--black);
