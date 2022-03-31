@@ -5,7 +5,7 @@
   margin-bottom: 1rem;
 }
 
-.drag-n-drop,
+.drag__area,
 span {
   display: none;
 }
@@ -28,6 +28,7 @@ input[type='file'] {
   background-position: center 40%;
   cursor: pointer;
 }
+
 .product__image--label::after {
   content: 'Adicionar uma imagem para o produto';
 }

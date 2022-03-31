@@ -46,7 +46,7 @@
     margin-bottom: 1rem;
   }
 
-  .drag-n-drop {
+  .drag__area {
     display: inline-block;
     width: 16rem;
     height: 9.5rem;
@@ -60,10 +60,23 @@
     background-position: center 25%;
   }
 
-  .drag-n-drop::after {
-    content: 'Arraste para adicionar uma imagem para o produto';
+  .drag__area.active {
+    border: 1px solid var(--black-30);
+    background: var(--blue-20);
+    background-image: url('/images/img-upload.svg');
+    background-repeat: no-repeat;
+    background-position: center 25%;
+  }
+
+  .drag__area--text {
     font-size: 0.875rem;
     color: var(--black-80);
+  }
+
+  .drag__area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   span {
@@ -84,11 +97,16 @@
     border: 1px solid var(--blue);
     cursor: pointer;
     margin: 0;
+    transition: background 0.3s;
   }
 
   .product__image--label::after {
     content: 'Procure no seu tablet';
     font-size: 1rem;
+  }
+
+  .product__image--label:hover {
+    background: var(--blue-20);
   }
 
   /* ===== BANNER ===== */
@@ -223,7 +241,7 @@
     margin: 0 auto;
   }
 
-  .drag-n-drop {
+  .drag__area {
     width: auto;
   }
 

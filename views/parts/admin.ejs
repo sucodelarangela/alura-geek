@@ -4,10 +4,20 @@
     <fieldset>
       <legend>Adicionar novo produto</legend>
       <div>
-        <div class="drag-n-drop"></div>
+        <div class="drag__area">
+          <p class="drag__area--text">
+            Arraste para adicionar uma imagem para o produto
+          </p>
+        </div>
         <span>ou</span>
         <label for="product__image" class="product__image--label"></label>
-        <input type="file" name="" id="product__image" accept="image/*" />
+        <input
+          type="file"
+          name=""
+          id="product__image"
+          class="product__image--input"
+          accept="image/*"
+        />
       </div>
       <label for="product__name" class="sr-only">Nome do produto</label>
       <input
