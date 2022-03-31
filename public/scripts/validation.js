@@ -45,7 +45,13 @@ const errorMsgs = {
   name: {
     valueMissing: valueMissing
   },
+  alternate: {
+    valueMissing: valueMissing
+  },
   description: {
+    valueMissing: valueMissing
+  },
+  category: {
     valueMissing: valueMissing
   }
 }
