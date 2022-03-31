@@ -19,6 +19,8 @@
   "homepage": "https://github.com/sucodelarangela/alura-geek#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sqlite": "^4.0.25",
+    "sqlite3": "^5.0.2"
   }
 }
