@@ -8,7 +8,7 @@ const route = express.Router()
 
 // defining get routes
 route.get('/', (req, res) => res.render('index', {page: 'main', title: 'Home'}))
-route.get('/produto', (req, res) =>
+route.get('/produto/:code', (req, res) =>
   res.render('index', {page: 'product', title: 'Produto'})
 )
 route.get('/login', (req, res) =>
@@ -23,6 +23,7 @@ route.get('/admin', (req, res) =>
 
 // defining post routes
 route.post('/todos-os-produtos/:code', ProductController.index)
+route.post('/produto/:code', ProductController.index)
 // It also requires a password but it will not be posted on the url
 // Implicitly, the .index is receiving (req, res) inside ProductController.js
 

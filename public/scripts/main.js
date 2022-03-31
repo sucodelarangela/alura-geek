@@ -3,10 +3,16 @@ const modal = Modal()
 
 const deleteBtn = document.querySelectorAll('.icon-delete')
 const confirmBtn = document.querySelector('.button.delete')
+const prodLink = document.querySelectorAll('.products__card--view')
 
 // Open modal and set route to form action when delete button is clicked
 deleteBtn.forEach(btn => {
   btn.addEventListener('click', handleClick)
+})
+
+prodLink.forEach(link => {
+  const itemCode = link.dataset.id
+  link.setAttribute('href', `/produto/${itemCode}`)
 })
 
 function handleClick(event) {
