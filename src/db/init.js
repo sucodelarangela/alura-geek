@@ -1,4 +1,4 @@
-const Database = require('./config')
+const Database = require('./config.js')
 
 const initDb = {
   async init() {
@@ -18,6 +18,8 @@ const initDb = {
       category TEXT,
       altText TEXT
     )`)
+
+    await db.close()
   }
 }
 
