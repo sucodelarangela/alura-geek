@@ -2,6 +2,7 @@
 const express = require('express')
 // import ProductController
 const ProductController = require('./controllers/ProductController.js')
+const LoginController = require('./controllers/LoginController')
 
 // saving all route functionalities that Express has
 const route = express.Router()
@@ -22,10 +23,11 @@ route.get('/admin', (req, res) =>
 )
 
 // defining post routes
-route.post('/todos-os-produtos/:code', ProductController.index)
-route.post('/produto/:code', ProductController.index)
-// It also requires a password but it will not be posted on the url
 // Implicitly, the .index is receiving (req, res) inside ProductController.js
+route.post('/todos-os-produtos/:code', ProductController.index) // to delete/edit buttons
+// It also requires a password but it will not be posted on the url
+route.post('/produto/:code', ProductController.index) // to open product page
+route.post('/todos-os-produtos', LoginController.enter) // to validate login
 
 // exporting the routes
 module.exports = route
