@@ -9,16 +9,15 @@ module.exports = {
     console.log(itemCode, password) // show data on console for verifying if everything is working
   },
 
-  enter(req, res) {},
-
   async create(req, res) {
-    const db = await Database()
-
-    let productId = 0
+    const productId = req.params.code
+    console.log(productId)
     let isId = true
 
+    const db = await Database()
+
     while (isId) {
-      // While the id number is equal to existing id in database, generates a new random number to the id
+      // If the id number is equal to existing id in database, keeps generating a new random number to the id
       for (var i = 0; i < 7; i++) {
         i == 0
           ? (productId = Math.floor(Math.random() * 10).toString())
@@ -33,13 +32,11 @@ module.exports = {
 
       // If id number is different from database (return false)
       if (!isId) {
-        // Insert new id into database
-        await db.run(/* Insert function */)
+        // Insert new id into route address
+        res.redirect(`/admin/${productId}`)
       }
     }
 
     await db.close()
-
-    // res.redirect()
   }
 }

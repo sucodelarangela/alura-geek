@@ -1,6 +1,6 @@
 <section class="admin container">
   <!-- Adicionar produto -->
-  <form action="" class="contact__form">
+  <form action="#" method="POST" class="contact__form">
     <fieldset>
       <legend>Adicionar novo produto</legend>
       <div>
@@ -13,7 +13,7 @@
         <label for="product__image" class="product__image--label"></label>
         <input
           type="file"
-          name=""
+          name="file"
           id="product__image"
           class="product__image--input"
           accept="image/*"
@@ -22,6 +22,7 @@
       <label for="product__name" class="sr-only">Nome do produto</label>
       <input
         type="text"
+        name="product__name"
         id="product__name"
         placeholder="Nome do produto"
         data-type="name"
@@ -31,6 +32,7 @@
       <label for="product__price" class="sr-only">Preço do produto</label>
       <input
         type="text"
+        name="product__price"
         inputmode="numeric"
         id="product__price"
         placeholder="Preço do produto"
@@ -42,7 +44,7 @@
         >Descrição do produto</label
       >
       <textarea
-        name=""
+        name="product__description"
         id="product__description"
         placeholder="Descrição do produto"
         data-type="description"
@@ -53,7 +55,7 @@
         >Texto alternativo para a imagem</label
       >
       <textarea
-        name=""
+        name="product__image--alt"
         id="product__image--alt"
         placeholder="Texto alternativo"
         data-type="alternate"
@@ -63,7 +65,12 @@
       <label for="product__category" class="sr-only"
         >Categoria do produto</label
       >
-      <select name="" id="product__category" data-type="category" required>
+      <select
+        name="product__category"
+        id="product__category"
+        data-type="category"
+        required
+      >
         <option value="" selected disabled>Selecione uma categoria:</option>
         <option value="star-wars">Star Wars</option>
         <option value="videogames">Video Games</option>

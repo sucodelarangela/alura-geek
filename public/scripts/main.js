@@ -1,9 +1,13 @@
 import Modal from './modal.js'
+import ProductId from './product-id.js'
+
 const modal = Modal()
+const productId = ProductId()
 
 const deleteBtn = document.querySelectorAll('.icon-delete')
 const confirmBtn = document.querySelector('.button.delete')
 const prodLink = document.querySelectorAll('.products__card--view')
+const addProduct = document.querySelector('.add')
 
 // Open modal and set route to form action when delete button is clicked
 deleteBtn.forEach(btn => {
@@ -25,3 +29,8 @@ function handleClick(event) {
 
   modal.openModal()
 }
+
+// Set new product id when creating a new product
+addProduct.addEventListener('click', event => {
+  productId.setId()
+})
