@@ -7,11 +7,15 @@ module.exports = {
     const email = req.body.email
     const password = req.body.password
 
-    db.get(`SELECT * FROM admin WHERE userLogin = "${email}"`).then(user => {
-      if (user.password == password) {
-        res.redirect('/todos-os-produtos')
+    const userInfo = db.get(`SELECT * FROM admin WHERE userLogin = "${email}"`)
+
+    userInfo.then(user => {
+      if (user === undefined) {
+        res.redirect('/login-error')
+      } else if (user.password !== password) {
+        res.redirect('/login-error')
       } else {
-        console.log('error')
+        res.redirect('/todos-os-produtos')
       }
     })
   }

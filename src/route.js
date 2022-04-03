@@ -21,6 +21,9 @@ route.get('/todos-os-produtos', (req, res) =>
 route.get('/admin/:code', (req, res) =>
   res.render('index', {page: 'admin', title: 'Administrador'})
 )
+route.get('/login-error', (req, res) =>
+  res.render('index', {page: 'login-error', title: 'Erro de Acesso'})
+)
 
 // defining post routes
 // Implicitly, the .index is receiving (req, res) inside ProductController.js

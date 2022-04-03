@@ -1,4 +1,4 @@
-.login.container {
+.login.container, .login__error.container {
   padding-top: 4.75rem;
   padding-bottom: 4.75rem;
 }
@@ -40,4 +40,30 @@
   display: block;
   margin: 0 auto;
   padding: 0.75rem 2.125rem;
+}
+
+.login__error {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.login__error h2 {
+  font-weight: 500;
+  color: var(--blue);
+  font-family: var(--press-start);
+}
+
+.login__error p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.login__error img {
+  height: 100px;
+  margin: 0 auto;
 }
