@@ -8,21 +8,50 @@ const LoginController = require('./controllers/LoginController')
 const route = express.Router()
 
 // defining get routes
-route.get('/', (req, res) => res.render('index', {page: 'main', title: 'Home'}))
-route.get('/produto/:code', (req, res) =>
-  res.render('index', {page: 'product', title: 'Produto'})
+route.get('/', (req, res) =>
+  res.render('index', {
+    page: 'main',
+    title: 'Home',
+    button:
+      '<a class="header__button button__void button" href="login">Login</a>'
+  })
+)
+route.get('/produto&id:code', (req, res) =>
+  res.render('index', {
+    page: 'product',
+    title: 'Produto',
+    button:
+      '<a class="header__button button__void button" href="/login">Login</a>'
+  })
 )
 route.get('/login', (req, res) =>
-  res.render('index', {page: 'login', title: 'Login'})
+  res.render('index', {
+    page: 'login',
+    title: 'Login',
+    button: '<div class="header__button button__void button">Login</div>'
+  })
 )
 route.get('/todos-os-produtos', (req, res) =>
-  res.render('index', {page: 'all-products', title: 'Produtos'})
+  res.render('index', {
+    page: 'all-products',
+    title: 'Produtos',
+    button: '<div class="header__button button__void button">Admin</div>'
+  })
 )
 route.get('/admin/:code', (req, res) =>
-  res.render('index', {page: 'admin', title: 'Administrador'})
+  res.render('index', {
+    page: 'admin',
+    title: 'Administrador',
+    button: '<div class="header__button button__void button">Admin</div>'
+  })
 )
 route.get('/login-error', (req, res) =>
-  res.render('index', {page: 'login-error', title: 'Erro de Acesso'})
+  res.render('index', {
+    page: 'login-error',
+    title: 'Erro de Acesso',
+    button:
+      '<a class="header__button button__void button" href="login">Login</a>'
+  })
 )
 
 // defining post routes

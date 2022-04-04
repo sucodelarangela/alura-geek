@@ -16,7 +16,7 @@ deleteBtn.forEach(btn => {
 
 prodLink.forEach(link => {
   const itemCode = link.dataset.id
-  link.setAttribute('href', `/produto/${itemCode}`)
+  link.setAttribute('href', `/produto&id${itemCode}`)
 })
 
 function handleClick(event) {
