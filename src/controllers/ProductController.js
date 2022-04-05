@@ -10,8 +10,7 @@ module.exports = {
   },
 
   async create(req, res) {
-    const productId = req.params.code
-    console.log(productId)
+    let productId = req.params.code
     let isId = true
 
     const db = await Database()
@@ -38,5 +37,15 @@ module.exports = {
     }
 
     await db.close()
+  },
+
+  open(req, res) {
+    const roomId = req.params.code
+    res.render('index', {
+      page: 'admin',
+      title: 'Administrador',
+      productId: roomId,
+      button: '<div class="header__button button__void button">Admin</div>'
+    })
   }
 }

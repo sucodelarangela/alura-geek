@@ -1,6 +1,11 @@
 <section class="admin container">
   <!-- Adicionar produto -->
-  <form action="#" method="POST" class="contact__form">
+  <form
+    action="/produto&id<%= productId %>"
+    method="POST"
+    class="contact__form"
+    data-id="<%= productId %>"
+  >
     <fieldset>
       <legend>Adicionar novo produto</legend>
       <div>
