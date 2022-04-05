@@ -38,13 +38,9 @@ route.get('/todos-os-produtos', (req, res) =>
     button: '<div class="header__button button__void button">Admin</div>'
   })
 )
-route.get('/admin/:code', (req, res) =>
-  res.render('index', {
-    page: 'admin',
-    title: 'Administrador',
-    button: '<div class="header__button button__void button">Admin</div>'
-  })
-)
+
+route.get('/admin/:code', ProductController.open)
+
 route.get('/login-error', (req, res) =>
   res.render('index', {
     page: 'login-error',

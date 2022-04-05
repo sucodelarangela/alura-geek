@@ -1,6 +1,7 @@
 //selecting all required elements
 const dropArea = document.querySelector('.drag__area')
 const dragText = dropArea.querySelector('.drag__area--text')
+const input = document.querySelector('.product__image--input')
 let file // global variable we'll use inside multiple functions
 
 function showFile() {
@@ -42,4 +43,11 @@ dropArea.addEventListener('drop', event => {
   //getting user select file and [0] this means if user select multiple files then we'll select only the first one
   file = event.dataTransfer.files[0]
   showFile() //calling function
+})
+
+//If user loads file through input
+input.addEventListener('change', () => {
+  file = input.files[0]
+  dropArea.classList.add('active')
+  showFile()
 })
