@@ -16,14 +16,8 @@ route.get('/', (req, res) =>
       '<a class="header__button button__void button" href="login">Login</a>'
   })
 )
-route.get('/produto&id:code', (req, res) =>
-  res.render('index', {
-    page: 'product',
-    title: 'Produto',
-    button:
-      '<a class="header__button button__void button" href="/login">Login</a>'
-  })
-)
+route.get('/produto&id:code', ProductController.open)
+
 route.get('/login', (req, res) =>
   res.render('index', {
     page: 'login',
@@ -39,7 +33,7 @@ route.get('/todos-os-produtos', (req, res) =>
   })
 )
 
-route.get('/admin/:code', ProductController.open)
+route.get('/admin/:code', LoginController.open)
 
 route.get('/login-error', (req, res) =>
   res.render('index', {
@@ -57,6 +51,7 @@ route.post('/todos-os-produtos/:code', ProductController.index) // to delete/edi
 route.post('/produto/:code', ProductController.index) // to open product page
 route.post('/todos-os-produtos', LoginController.enter) // to validate login
 route.post('/admin/:code', ProductController.create) // to create new product id
+route.post('/produto&id:code', ProductController.save) // open page of recently created product
 
 // exporting the routes
 module.exports = route
