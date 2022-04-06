@@ -39,7 +39,13 @@ module.exports = {
     await db.close()
   },
 
-  open(req, res) {
+  async open(req, res) {
+    const db = await Database()
+    const productId = req.params.code
+    const products = await db.all(
+      `SELECT * FROM products WHERE id = ${productId}`
+    )
+
     res.render('index', {
       page: 'product',
       title: 'Produto',
@@ -51,7 +57,7 @@ module.exports = {
   async save(req, res) {
     const db = await Database()
     const roomId = req.params.code
-    const file = req.body.file
+    const file = req.body.imageSrc
     const prodName = req.body.prodName
     const price = req.body.price
     const description = req.body.description

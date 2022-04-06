@@ -7,6 +7,6 @@ const route = require('./route') // import the route configured in route.js
 const server = express()
 server.set('view engine', 'ejs') // indicates to Node what will be our view engine
 server.use(express.static('public')) // allow express to use static content (styles, images, etc)
-server.use(express.urlencoded({extended: true})) // sets a midware to connect front end and back end
+server.use(express.urlencoded({extended: true, limit: '50mb'})) // sets a midware to connect front end and back end
 server.use(route) // indicates that Express must use the route file
 server.listen(port, () => console.log(`APP RUNNING ON PORT ${port}`))
