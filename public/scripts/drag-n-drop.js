@@ -15,6 +15,7 @@ function showFile() {
       let imgTag = `<img src="${fileURL}" alt="imagem carregada">` //creating an img tag and passing user selected file source inside src attribute
       dropArea.style.padding = 0
       dropArea.innerHTML = imgTag //adding that created img tag inside dropArea container
+      document.querySelector('.img--src').value = fileURL
     }
     fileReader.readAsDataURL(file)
   } else {
