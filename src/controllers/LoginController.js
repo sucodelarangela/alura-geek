@@ -18,5 +18,15 @@ module.exports = {
         res.redirect('/todos-os-produtos')
       }
     })
+  },
+
+  open(req, res) {
+    const roomId = req.params.code
+    res.render('index', {
+      page: 'admin',
+      title: 'Administrador',
+      productId: roomId,
+      button: '<div class="header__button button__void button">Admin</div>'
+    })
   }
 }

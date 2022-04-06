@@ -34,8 +34,8 @@ O Desafio começou em 14 de março de 2022.
 
 - **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
 - **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
-- **Semana 3 (atual):** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
-- **Semana 4 (em breve)**
+- **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
+- **Semana 4 (atual):** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos.
 
 ## ⚙️ Como usar
 
@@ -89,8 +89,8 @@ The Challenge started at March 14th, 2022.
 
 - **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
 - **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
-- **Week 3 (current):** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
-- **Week 4 (coming soon)**
+- **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
+- **Week 4 (current):** Project conclusion (products registered in database and new produtc registration functionality).
 
 ## ⚙️ How to use it
 

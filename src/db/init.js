@@ -12,7 +12,7 @@ const initDb = {
     )`)
 
     await db.exec(`CREATE TABLE products (
-      id INTEGER PRIMARY KEY,
+      id INTEGER,
       image BLOB,
       name TEXT,
       price MONEY,

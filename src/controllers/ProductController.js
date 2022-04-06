@@ -40,12 +40,47 @@ module.exports = {
   },
 
   open(req, res) {
-    const roomId = req.params.code
     res.render('index', {
-      page: 'admin',
-      title: 'Administrador',
-      productId: roomId,
-      button: '<div class="header__button button__void button">Admin</div>'
+      page: 'product',
+      title: 'Produto',
+      button:
+        '<a class="header__button button__void button" href="/login">Login</a>'
     })
+  },
+
+  async save(req, res) {
+    const db = await Database()
+    const roomId = req.params.code
+    const file = req.body.file
+    const prodName = req.body.prodName
+    const price = req.body.price
+    const description = req.body.description
+    const alt = req.body.imgAlt
+    const category = req.body.category
+
+    console.log(
+      `Id do produto: ${roomId}, imagem: ${file}, nome: ${prodName}, preço: ${price}, descrição: ${description}, alt: ${alt} e categoria: ${category}`
+    )
+
+    await db.run(`INSERT INTO products (
+      id,
+      image,
+      name,
+      price,
+      description,
+      category,
+      altText
+    ) VALUES (
+      ${roomId},
+      "${file}",
+      "${prodName}",
+      "${price}",
+      "${description}",
+      "${category}",
+      "${alt}"
+    )`)
+
+    res.redirect(`/produto&id${roomId}`)
+    await db.close()
   }
 }
