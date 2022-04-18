@@ -88,5 +88,30 @@ module.exports = {
 
     res.redirect(`/produto&id${roomId}`)
     await db.close()
+  },
+
+  async show(req, res) {
+    const db = await Database()
+    const starWars = await db.all(
+      'SELECT * FROM products WHERE category = "star-wars"'
+    )
+    const videogames = await db.all(
+      'SELECT * FROM products WHERE category = "videogames"'
+    )
+    const misc = await db.all(
+      'SELECT * FROM products WHERE category = "diversos"'
+    )
+
+    console.log(starWars)
+
+    res.render('index', {
+      page: 'main',
+      title: 'Home',
+      button:
+        '<a class="header__button button__void button" href="login">Login</a>',
+      starWars: starWars,
+      consoles: videogames,
+      diversos: misc
+    })
   }
 }

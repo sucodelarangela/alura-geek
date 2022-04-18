@@ -17,48 +17,21 @@
     <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
   </div>
   <div class="products__card grid">
+    <% starWars.forEach(product => { %>
     <div>
-      <img src="images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a class="products__card--view" href="#" method="POST" data-id="1111111"
-        >Ver produto</a
+      <img src="<%= product.image %>" alt="<%= product.altText %>" />
+      <h3><%= product.name %></h3>
+      <p><%= product.price %></p>
+      <a
+        class="products__card--view"
+        href="#"
+        method="POST"
+        data-id="<%= product.id %>"
       >
+        Ver produto
+      </a>
     </div>
-    <div>
-      <img src="images/vader-pilot-lego.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a class="products__card--view" href="#" method="POST" data-id="1111112"
-        >Ver produto</a
-      >
-    </div>
-    <div>
-      <img src="images/yoda-statue.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a class="products__card--view" href="#" method="POST" data-id="1111113"
-        >Ver produto</a
-      >
-    </div>
-    <div>
-      <img src="images/stormtrooper-figure.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/baby-yoda.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/kylo-figure.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
+    <% }) %>
   </div>
 </section>
 
@@ -69,50 +42,21 @@
     <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
   </div>
   <div class="products__card grid">
+    <% consoles.forEach(console => { %>
     <div>
-      <img
-        src="images/xbox-one-white-controller.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Controle XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
+      <img src="<%= console.image %>" alt="<%= console.altText %>" />
+      <h3><%= console.name %></h3>
+      <p><%= console.price %></p>
+      <a
+        class="products__card--view"
+        href="#"
+        method="POST"
+        data-id="<%= console.id %>"
+      >
+        Ver produto
+      </a>
     </div>
-    <div>
-      <img
-        src="images/ps5-white-with-controller.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Controle e console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/nes-console.jpg" alt="" aria-hidden="true" />
-      <h3>Console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/switch-controllers.jpg" alt="" aria-hidden="true" />
-      <h3>Controle XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/xbox-one.jpg" alt="" aria-hidden="true" />
-      <h3>Controle XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/gameboy.jpg" alt="" aria-hidden="true" />
-      <h3>Game Boy Color</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
+    <% }) %>
   </div>
 </section>
 
@@ -123,41 +67,20 @@
     <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
   </div>
   <div class="products__card grid">
+    <% diversos.forEach(misc => { %>
     <div>
-      <img src="images/atari-shirt.jpg" alt="" aria-hidden="true" />
-      <h3>Camisa Atari</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
+      <img src="<%= misc.image %>" alt="<%= misc.altText %>" />
+      <h3><%= misc.name %></h3>
+      <p><%= misc.price %></p>
+      <a
+        class="products__card--view"
+        href="#"
+        method="POST"
+        data-id="<%= misc.id %>"
+      >
+        Ver produto
+      </a>
     </div>
-    <div>
-      <img src="images/nes-shirt.jpg" alt="" aria-hidden="true" />
-      <h3>Camisa SNES</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/sonic-tails-statue.jpg" alt="" aria-hidden="true" />
-      <h3>Controle e console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/pink-clock-radio.jpg" alt="" aria-hidden="true" />
-      <h3>Controle e console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/ps-vr.jpg" alt="" aria-hidden="true" />
-      <h3>Controle e console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="images/pikachu-plush.jpg" alt="" aria-hidden="true" />
-      <h3>Controle e console XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
+    <% }) %>
   </div>
 </section>

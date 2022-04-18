@@ -8,14 +8,8 @@ const LoginController = require('./controllers/LoginController')
 const route = express.Router()
 
 // defining get routes
-route.get('/', (req, res) =>
-  res.render('index', {
-    page: 'main',
-    title: 'Home',
-    button:
-      '<a class="header__button button__void button" href="login">Login</a>'
-  })
-)
+route.get('/', ProductController.show)
+
 route.get('/produto&id:code', ProductController.open)
 
 route.get('/login', (req, res) =>
