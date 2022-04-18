@@ -1,5 +1,5 @@
 {
-  "name": "Alura Geek",
+  "name": "alura-geek",
   "version": "1.0.0",
   "description": "Página de e-commerce para uma loja online de produtos geek chamada Alura Geek, que está sendo desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia Alura.",
   "main": "src/server.js",
