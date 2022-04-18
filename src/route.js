@@ -10,7 +10,7 @@ const route = express.Router()
 // defining get routes
 route.get('/', ProductController.show)
 
-route.get('/produto&id:code', ProductController.open)
+route.get('/produto&id=:code', ProductController.open)
 
 route.get('/login', (req, res) =>
   res.render('index', {

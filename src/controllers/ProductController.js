@@ -5,8 +5,6 @@ module.exports = {
   index(req, res) {
     const itemCode = req.params.code // gets parameter from form action route variable
     const password = req.body.password // gets password typed on password input on modal
-
-    console.log(itemCode, password) // show data on console for verifying if everything is working
   },
 
   async create(req, res) {
@@ -42,15 +40,21 @@ module.exports = {
   async open(req, res) {
     const db = await Database()
     const productId = req.params.code
-    const products = await db.all(
+    const product = await db.get(
       `SELECT * FROM products WHERE id = ${productId}`
+    )
+
+    const similar = await db.all(
+      `SELECT * FROM products WHERE category = "${product.category}" AND id != ${product.id}`
     )
 
     res.render('index', {
       page: 'product',
       title: 'Produto',
       button:
-        '<a class="header__button button__void button" href="/login">Login</a>'
+        '<a class="header__button button__void button" href="/login">Login</a>',
+      product: product,
+      others: similar
     })
   },
 
@@ -63,10 +67,6 @@ module.exports = {
     const description = req.body.description
     const alt = req.body.imgAlt
     const category = req.body.category
-
-    console.log(
-      `Id do produto: ${roomId}, imagem: ${file}, nome: ${prodName}, preço: ${price}, descrição: ${description}, alt: ${alt} e categoria: ${category}`
-    )
 
     await db.run(`INSERT INTO products (
       id,
@@ -86,7 +86,7 @@ module.exports = {
       "${alt}"
     )`)
 
-    res.redirect(`/produto&id${roomId}`)
+    res.redirect(`/produto&id=${roomId}`)
     await db.close()
   },
 
@@ -101,8 +101,6 @@ module.exports = {
     const misc = await db.all(
       'SELECT * FROM products WHERE category = "diversos"'
     )
-
-    console.log(starWars)
 
     res.render('index', {
       page: 'main',

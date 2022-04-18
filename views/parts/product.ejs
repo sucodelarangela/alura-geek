@@ -1,18 +1,9 @@
-<section class="product__image">
-  <img src="/images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
-</section>
-
 <section class="product container">
-  <img src="/images/stormtrooper-mug.jpg" alt="" aria-hidden="true" />
+  <img src="<%= product.image %>" alt="<%= product.altText %>" />
   <div>
-    <h2>Produto XYZ</h2>
-    <p>R$ 60,00</p>
-    <p class="product__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-      laboriosam nemo repellendus iure officia suscipit delectus eius esse
-      eligendi cupiditate expedita eum quaerat, voluptatem similique!
-      Commodi consequuntur voluptates voluptatem dignissimos.
-    </p>
+    <h2><%= product.name %></h2>
+    <p><%= product.price %></p>
+    <p class="product__description"><%= product.description %></p>
   </div>
 </section>
 
@@ -21,57 +12,13 @@
     <h2>Produtos similares</h2>
   </div>
   <div class="products__card grid">
+    <% others.forEach(similar => { %>
     <div>
-      <img
-        src="/images/xbox-one-white-controller.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Controle XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
+      <img src="<%= similar.image %>" alt="<%= similar.altText %>" />
+      <h3><%= similar.name %></h3>
+      <p><%= similar.price %></p>
+      <a href="<%= `/produto&id=${similar.id}` %>">Ver produto</a>
     </div>
-    <div>
-      <img
-        src="/images/vader-pilot-lego.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="/images/yoda-statue.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img
-        src="/images/stormtrooper-figure.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img src="/images/baby-yoda.jpg" alt="" aria-hidden="true" />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
-    <div>
-      <img
-        src="/images/kylo-figure.jpg"
-        alt=""
-        aria-hidden="true"
-      />
-      <h3>Produto XYZ</h3>
-      <p>R$ 60,00</p>
-      <a href="#">Ver produto</a>
-    </div>
+    <% }) %>
+  </div>
 </section>
-
