@@ -111,5 +111,21 @@ module.exports = {
       consoles: videogames,
       diversos: misc
     })
+  },
+
+  async view(req, res) {
+    const db = await Database()
+    const category = req.params.category
+    const products = await db.all(
+      `SELECT * FROM products WHERE category = "${category}"`
+    )
+
+    res.render('index', {
+      page: 'view-category',
+      title: 'Ver Produtos',
+      button:
+        '<a class="header__button button__void button" href="login">Login</a>',
+      productsList: products
+    })
   }
 }

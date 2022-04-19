@@ -1,0 +1,23 @@
+<!-- Ver categoria -->
+<section class="products container highlight">
+  <div class="products__text">
+    <h2>Produtos selecionados</h2>
+  </div>
+  <div class="products__card grid view">
+    <% productsList.forEach(product => { %>
+    <div>
+      <img src="<%= product.image %>" alt="<%= product.altText %>" />
+      <h3><%= product.name %></h3>
+      <p><%= product.price %></p>
+      <a
+        class="products__card--view"
+        href="#"
+        method="POST"
+        data-id="<%= product.id %>"
+      >
+        Ver produto
+      </a>
+    </div>
+    <% }) %>
+  </div>
+</section>

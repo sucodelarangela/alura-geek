@@ -2,6 +2,10 @@
   display: none;
 }
 
+.products .products__card.view div:nth-child(n + 5) {
+  display: grid;
+}
+
 .products__text,
 .products__text--add {
   display: flex;

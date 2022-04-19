@@ -14,7 +14,9 @@
 <section class="products container highlight">
   <div class="products__text">
     <h2>Star Wars</h2>
-    <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
+    <a href="<%= `/ver&category=${starWars[0].category}` %>"
+      >Ver tudo <i class="icon-arrow-right"></i
+    ></a>
   </div>
   <div class="products__card grid">
     <% starWars.forEach(product => { %>
@@ -39,7 +41,9 @@
 <section class="products container" id="consoles">
   <div class="products__text">
     <h2>Consoles</h2>
-    <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
+    <a href="<%= `/ver&category=${consoles[0].category}` %>"
+      >Ver tudo <i class="icon-arrow-right"></i
+    ></a>
   </div>
   <div class="products__card grid">
     <% consoles.forEach(console => { %>
@@ -64,7 +68,9 @@
 <section class="products container miscellaneous">
   <div class="products__text">
     <h2>Diversos</h2>
-    <a href="#">Ver tudo <i class="icon-arrow-right"></i></a>
+    <a href="<%= `/ver&category=${diversos[0].category}` %>"
+      >Ver tudo <i class="icon-arrow-right"></i
+    ></a>
   </div>
   <div class="products__card grid">
     <% diversos.forEach(misc => { %>
