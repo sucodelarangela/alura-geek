@@ -283,7 +283,9 @@
   }
 
   .product.container {
-    height: 30vw;
+    display: grid;
+    /* height: 30vw; */
+    grid-template-columns: 1.5fr 2fr;
     align-items: center;
   }
 
@@ -299,6 +301,11 @@
 
   .product h2 {
     font-size: 3.25rem;
+    line-height: 3.75rem;
+  }
+
+  .product p {
+    font-size: 1.5rem;
   }
 
   .product .product__description {
