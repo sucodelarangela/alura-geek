@@ -17,12 +17,8 @@ module.exports = {
         } else if (pass.password !== password) {
           res.redirect('/pass-incorrect')
         } else {
-          if (action == 'delete') {
-            db.run(`DELETE FROM products WHERE id = ${itemCode}`)
-          } else if (action == 'edit') {
-            console.log('edited')
-            // res.redirect(`/room/${roomId}`)
-          }
+          db.run(`DELETE FROM products WHERE id = ${itemCode}`)
+          res.redirect('/todos-os-produtos')
         }
       })
   },

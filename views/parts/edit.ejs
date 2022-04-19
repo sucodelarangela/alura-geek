@@ -17,10 +17,8 @@
           hidden
           aria-hidden="true"
         />
-        <div class="drag__area">
-          <p class="drag__area--text">
-            Arraste para adicionar uma imagem para o produto
-          </p>
+        <div class="drag__area active" style="padding: 0;">
+          <img src="<%= item.image %>" alt="<%= item.altText %>">
         </div>
         <span>ou</span>
         <label for="product__image" class="product__image--label"></label>

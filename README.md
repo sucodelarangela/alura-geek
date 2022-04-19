@@ -81,6 +81,23 @@ O Desafio começou em 14 de março de 2022.
 - **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
 - **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
 
+## 🛡️ Badges recebidas pelo projeto
+
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <img height="150px" src="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/Badge_Alura_Challenge_FRONT-END_First_v2.png">
+    </td>
+    <td>
+      <img height="150px" src="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/Badge_Alura_Challenge_FRONT-END_Helper.png">
+    </td>
+  </tr>
+  <tr>
+    <td>Badge de Participação</td>
+    <td>Badge de Apoio<br>à Comunidade</td>
+  </tr>
+</table>
+
 ---
 
 <div id="English" style="font-style: italic;">
@@ -147,6 +164,23 @@ The Challenge started at March 14th, 2022.
 - **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 - **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
 - **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
+
+## 🛡️ Badges received in this project
+
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <img height="150px" src="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/Badge_Alura_Challenge_FRONT-END_First_v2.png">
+    </td>
+    <td>
+      <img height="150px" src="https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/Badge_Alura_Challenge_FRONT-END_Helper.png">
+    </td>
+  </tr>
+  <tr>
+    <td>Participation Badge</td>
+    <td>Community<br>Support Badge</td>
+  </tr>
+</table>
 
 ---
 
