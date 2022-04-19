@@ -12,13 +12,57 @@ _For the English version of this README, click [here](#English)._
   
 ![GitHub deployments](https://img.shields.io/github/deployments/sucodelarangela/alura-geek/alurageek?style=flat-square)
   
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
+  <a href="https://github.com/codermarcos/simple-mask-money"><img src="https://img.shields.io/badge/SimpleMaskMoney-222222?style=for-the-badge" /></a>
+  <img src="https://img.shields.io/badge/SQLite3-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
 </div>
 
 ## 🔎 Visão geral
 
 Olá, devs!
 
-Neste repositório você encontrará uma página de e-commerce para uma loja online de produtos geek chamada **Alura Geek**, que está sendo desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia [Alura](https://www.alura.com.br).
+Neste repositório você encontrará uma página de e-commerce (versão do administrador) para uma loja online de produtos geek chamada **Alura Geek**, que está sendo desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia [Alura](https://www.alura.com.br).
+
+## ⚙️ Como usar
+
+Você pode testar a página clicando na imagem no topo deste README, porém, por se tratar de uma página _serverless_, algumas funções podem não estar disponíveis (como, por exemplo, inserir ou editar um produto do banco de dados). No entanto, a navegação pelo site é totalmente viável.
+
+Para experimentar a aplicação em sua totalidade, você pode roda-lo localmente. Para isso, siga as etapas a seguir:
+
+1. Faça o download deste repositório através do botão verde **Code** no topo da página e, em seguida, clicando em **Download ZIP**. Ou, se preferir, através do terminal (Git Bash, Powershell, etc.), use o comando:
+
+```
+git clone https://github.com/sucodelarangela/alura-geek.git
+```
+
+2. Acesse a pasta do projeto com seu terminal;
+
+3. Rode o comando `npm install` para instalar as dependências;
+
+4. Para iniciar a aplicação, rode o comando `npm start` no terminal. Você deve receber a seguinte mensagem de confirmação:
+
+```
+npm start
+
+> alura-geek@1.0.0 start
+> node .
+
+APP RUNNING ON PORT 3000
+```
+
+5. Para usar a aplicação, abra o seu browser preferido e acesse o endereço `http://localhost:3000/`
+
+6. Para fazer o login de administrador na página, utilize os seguintes dados:
+
+```
+E-mail: admin@email.com
+Senha: 12345aZ
+```
 
 ## 🦾 Sobre o desafio
 
@@ -30,36 +74,12 @@ O Desafio dura 4 semanas. Todas as segundas-feiras durante 3 semanas receberemos
 
 O Desafio começou em 14 de março de 2022.
 
-## 📈 Andamento do projeto
+## 📈 Etapas do projeto
 
 - **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
 - **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
 - **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
-- **Semana 4 (atual):** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos.
-
-## ⚙️ Como usar
-
-Você pode testar a página clicando na imagem no topo deste README. Ou, se desejar, faça o download deste repositório e, com o seu terminal, entre no diretório do projeto e siga os passos abaixo:
-
-1. Rode o comando `npm install` para instalar as dependências;
-<!-- 2. Depois, rode o comando `npm run init-db` para instalar o banco de dados -->
-2. Para iniciar a aplicação, rode o comando `npm start`;
-3. Para fazer o login de administrador na página, utilize os seguintes dados:
-   - E-mail: `admin@email.com`
-   - Senha: `12345aZ`
-
-## 💻 Linguagens, bibliotecas e/ou API's utilizadas (até o momento):
-
-<div>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
-  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
-  <a href="https://github.com/codermarcos/simple-mask-money"><img src="https://img.shields.io/badge/SimpleMaskMoney-222222?style=for-the-badge" /></a>
-  <img src="https://img.shields.io/badge/SQLite3-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
-</div>
+- **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
 
 ---
 
@@ -73,7 +93,43 @@ _English version_
 
 Hello, devs!
 
-In this repo you will find an e-commerce page for a geek products store named **Alura Geek**, which is currently in development as a result of a Front-End Challenge (3rd edition) exclusively for students of [Alura](https://www.alura.com.br) tech school.
+In this repo you will find an e-commerce page (admin version) for a geek store named **Alura Geek**, which is currently in development as a result of a Front-End Challenge (3rd edition) exclusively for students of [Alura](https://www.alura.com.br) tech school.
+
+## ⚙️ How to use it
+
+You can test the page by clicking the image on the top of this README, but as it is a serverless deploy on Heroku, some functionalities may not work properly (i.e. inserting or editing a product in database). However, if you just want to browse the application, it is perfectly fine.
+
+For full access to the app functionalities, you can run it locally on your machine. In order to do so, follow the steps below:
+
+1. Download this repository by clicking the green **Code** button on top of the page and then clicking **Download ZIP** option. Or use the following command on your terminal (Git Bash, Powershell, etc.):
+
+```
+git clone https://github.com/sucodelarangela/alura-geek.git
+```
+
+2. Access the project root folder on your terminal;
+
+3. Run `npm install` to install all project dependencies;
+
+4. To start the application, run `npm start` on yout terminal. You should receive the following message:
+
+```
+npm start
+
+> alura-geek@1.0.0 start
+> node .
+
+APP RUNNING ON PORT 3000
+```
+
+5. To use the app, open your favorite browser and go to the URL `http://localhost:3000/`
+
+6. To log in as admin, use the following data:
+
+```
+E-mail: admin@email.com
+Password: 12345aZ
+```
 
 ## 🦾 About the challenge
 
@@ -85,33 +141,13 @@ The Challenge lasts 4 weeks. Every Monday for 3 weeks we will receive new assign
 
 The Challenge started at March 14th, 2022.
 
-## 📈 Project status
+## 📈 Project stages
 
 - **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
 - **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 - **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
-- **Week 4 (current):** Project conclusion (products registered in database and new produtc registration functionality).
+- **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
 
-## ⚙️ How to use it
+---
 
-You can test the page by clicking the image on the top of this README. Or, if you prefer, download this repository, run your terminal inside the project directory and follow the steps below:
-
-1. Run the command `npm install` to install the dependencies;
-<!-- 2. Then, run the command `npm run init-db` to install the database; -->
-2. Finally, start the application by running the command `npm start`;
-3. To login as administrator and have access to the rest of the application, use the following data:
-   - E-mail: `admin@email.com`
-   - Password: `12345aZ`
-
-## 💻 Languages, libs and/or API's used (until now):
-
-<div>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
-  <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
-  <a href="https://github.com/codermarcos/simple-mask-money"><img src="https://img.shields.io/badge/SimpleMaskMoney-222222?style=for-the-badge" /></a>
-  <img src="https://img.shields.io/badge/SQLite3-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
-</div>
+Developed with 🧡 by [@sucodelarangela 🍊](https://angelacaldas.vercel.app) (it's a me!)
