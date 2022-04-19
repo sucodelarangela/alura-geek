@@ -2,9 +2,29 @@
 const Database = require('../db/config.js')
 
 module.exports = {
-  index(req, res) {
+  async index(req, res) {
+    const db = await Database()
     const itemCode = req.params.code // gets parameter from form action route variable
     const password = req.body.password // gets password typed on password input on modal
+    const action = req.params.action // gets action from form action route variable
+
+    // Verificar se a senha está correta
+    const verifyPass = await db
+      .get(`SELECT * FROM admin WHERE password = "${password}"`)
+      .then(pass => {
+        if (pass === undefined) {
+          res.redirect('/pass-incorrect')
+        } else if (pass.password !== password) {
+          res.redirect('/pass-incorrect')
+        } else {
+          if (action == 'delete') {
+            await db.run(`DELETE FROM products WHERE id = ${itemCode}`)
+          } else if (action == 'edit') {
+            console.log('edited')
+            // res.redirect(`/room/${roomId}`)
+          }
+        }
+      })
   },
 
   async create(req, res) {

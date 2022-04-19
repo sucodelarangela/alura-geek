@@ -34,9 +34,18 @@ route.get('/login-error', (req, res) =>
   })
 )
 
+route.get('/pass-incorrect', (req, res) =>
+  res.render('index', {
+    page: 'pass-incorrect',
+    title: 'Sem Permissão',
+    button:
+      '<a class="header__button button__void button" href="login">Login</a>'
+  })
+)
+
 // defining post routes
 // Implicitly, the .index is receiving (req, res) inside ProductController.js
-route.post('/todos-os-produtos/:code', ProductController.index) // to delete/edit buttons
+route.post('/todos-os-produtos/:code/:action', ProductController.index) // to delete/edit buttons
 // It also requires a password but it will not be posted on the url
 route.post('/produto/:code', ProductController.index) // to open product page
 route.post('/todos-os-produtos', LoginController.enter) // to validate login

@@ -11,7 +11,7 @@ const addProduct = document.querySelector('.add')
 
 // Open modal and set route to form action when delete button is clicked
 deleteBtn.forEach(btn => {
-  btn.addEventListener('click', handleClick)
+  btn.addEventListener('click', event => handleClick(event, 'delete'))
 })
 
 prodLink.forEach(link => {
@@ -19,13 +19,14 @@ prodLink.forEach(link => {
   link.setAttribute('href', `/produto&id=${itemCode}`)
 })
 
-function handleClick(event) {
+function handleClick(event, action) {
+  event.preventDefault()
   const modalForm = document.querySelector('.modal form')
   // get data-id value in DOM for each target of click event
   const itemCode = event.target.dataset.id
 
   // Set URL route to modal form action attribute
-  modalForm.setAttribute('action', `/todos-os-produtos/${itemCode}`)
+  modalForm.setAttribute('action', `/todos-os-produtos/${itemCode}/${action}`)
 
   modal.openModal()
 }
