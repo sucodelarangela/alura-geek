@@ -18,7 +18,7 @@ module.exports = {
           res.redirect('/pass-incorrect')
         } else {
           if (action == 'delete') {
-            await db.run(`DELETE FROM products WHERE id = ${itemCode}`)
+            db.run(`DELETE FROM products WHERE id = ${itemCode}`)
           } else if (action == 'edit') {
             console.log('edited')
             // res.redirect(`/room/${roomId}`)
@@ -88,26 +88,36 @@ module.exports = {
     const alt = req.body.imgAlt
     const category = req.body.category
 
-    await db.run(`INSERT INTO products (
-      id,
-      image,
-      name,
-      price,
-      description,
-      category,
-      altText
-    ) VALUES (
-      ${roomId},
-      "${file}",
-      "${prodName}",
-      "${price}",
-      "${description}",
-      "${category}",
-      "${alt}"
-    )`)
+    await db.get(`SELECT * FROM products WHERE id = ${roomId}`).then(item => {
+      if (item === undefined) {
+        db.run(`INSERT INTO products (
+          id,
+          image,
+          name,
+          price,
+          description,
+          category,
+          altText
+        ) VALUES (
+          ${roomId},
+          "${file}",
+          "${prodName}",
+          "${price}",
+          "${description}",
+          "${category}",
+          "${alt}"
+        )`)
 
-    res.redirect(`/produto&id=${roomId}`)
-    await db.close()
+        res.redirect(`/produto&id=${roomId}`)
+        db.close()
+      } else {
+        db.run(
+          `UPDATE products SET image = "${file}", name = "${prodName}", price = "${price}", description = "${description}", category = "${category}", altText = "${alt}" WHERE id = ${roomId}`
+        )
+        db.close()
+        res.redirect(`/produto&id=${roomId}`)
+      }
+    })
   },
 
   async show(req, res) {
@@ -158,6 +168,19 @@ module.exports = {
       title: 'Produtos',
       button: '<div class="header__button button__void button">Admin</div>',
       products: allProducts
+    })
+  },
+
+  async openEdit(req, res) {
+    const db = await Database()
+    const itemCode = req.params.code
+    const item = await db.get(`SELECT * FROM products WHERE id = ${itemCode}`)
+
+    res.render('index', {
+      page: 'edit',
+      title: 'Edição',
+      button: '<div class="header__button button__void button">Admin</div>',
+      item: item
     })
   }
 }

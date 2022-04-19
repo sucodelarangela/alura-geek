@@ -1,0 +1,105 @@
+<section class="admin container">
+  <!-- Adicionar produto -->
+  <form
+    action="/produto&id<%= item.id %>"
+    method="POST"
+    class="contact__form"
+    data-id="<%= item.id %>"
+  >
+    <fieldset>
+      <legend>Adicionar novo produto</legend>
+      <div>
+        <input
+          type="text"
+          class="img--src"
+          name="imageSrc"
+          value="<%= item.image %>"
+          hidden
+          aria-hidden="true"
+        />
+        <div class="drag__area">
+          <p class="drag__area--text">
+            Arraste para adicionar uma imagem para o produto
+          </p>
+        </div>
+        <span>ou</span>
+        <label for="product__image" class="product__image--label"></label>
+        <input
+          type="file"
+          name="file"
+          id="product__image"
+          class="product__image--input"
+          accept="image/*"
+        />
+      </div>
+      <label for="product__name" class="sr-only">Nome do produto</label>
+      <input
+        type="text"
+        name="prodName"
+        id="product__name"
+        placeholder="Nome do produto"
+        data-type="name"
+        value="<%= item.name %>"
+        required
+      />
+      <span role="alert"></span>
+      <label for="product__price" class="sr-only">Preço do produto</label>
+      <input
+        type="text"
+        name="price"
+        inputmode="numeric"
+        id="product__price"
+        placeholder="Preço do produto"
+        data-type="price"
+        value="<%= item.price %>"
+        required
+      />
+      <span role="alert"></span>
+      <label for="product__description" class="sr-only"
+        >Descrição do produto</label
+      >
+      <textarea
+        name="description"
+        id="product__description"
+        placeholder="Descrição do produto"
+        data-type="description"
+        required
+      >
+<%= item.description %></textarea
+      >
+      <span role="alert"></span>
+      <label for="product__image--alt" class="sr-only"
+        >Texto alternativo para a imagem</label
+      >
+      <textarea
+        name="imgAlt"
+        id="product__image--alt"
+        placeholder="Texto alternativo"
+        data-type="alternate"
+        required
+      >
+<%= item.altText %></textarea
+      >
+      <span role="alert"></span>
+      <label for="product__category" class="sr-only"
+        >Categoria do produto</label
+      >
+      <select
+        name="category"
+        id="product__category"
+        data-type="category"
+        value="<%= item.category %>"
+        required
+      >
+        <option value="" disabled>Selecione uma categoria:</option>
+        <option value="star-wars" <%= item.category == 'star-wars' ? 'selected' : '' %>>Star Wars</option>
+        <option value="videogames" <%= item.category == 'videogames' ? 'selected' : '' %>>Video Games</option>
+        <option value="diversos" <%= item.category == 'diversos' ? 'selected' : '' %>>Diversos</option>
+      </select>
+      <span role="alert"></span>
+      <button type="submit" class="button__blue button">
+        Adicionar produto
+      </button>
+    </fieldset>
+  </form>
+</section>

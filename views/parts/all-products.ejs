@@ -18,7 +18,9 @@
       <h3 class="products__card--code"><%= `#${product.id}` %></h3>
       <div class="products__card--actions">
         <i class="icon-delete" data-id="<%= product.id %>"></i>
-        <i class="icon-edit" data-id="<%= product.id %>"></i>
+        <a href="<%= `/editar&id=${product.id}` %>">
+          <i class="icon-edit"></i>
+        </a>
       </div>
     </div>
     <% }) %>

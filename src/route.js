@@ -12,6 +12,8 @@ route.get('/', ProductController.show)
 
 route.get('/produto&id=:code', ProductController.open)
 
+route.get('/editar&id=:code', ProductController.openEdit)
+
 route.get('/ver&category=:category', ProductController.view)
 
 route.get('/login', (req, res) =>

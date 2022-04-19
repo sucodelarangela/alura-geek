@@ -5,7 +5,6 @@ const modal = Modal()
 const productId = ProductId()
 
 const deleteBtn = document.querySelectorAll('.icon-delete')
-const confirmBtn = document.querySelector('.button.delete')
 const prodLink = document.querySelectorAll('.products__card--view')
 const addProduct = document.querySelector('.add')
 
@@ -25,10 +24,11 @@ function handleClick(event, action) {
   // get data-id value in DOM for each target of click event
   const itemCode = event.target.dataset.id
 
-  // Set URL route to modal form action attribute
-  modalForm.setAttribute('action', `/todos-os-produtos/${itemCode}/${action}`)
-
-  modal.openModal()
+  if (action == 'delete') {
+    // Set URL route to modal form action attribute
+    modalForm.setAttribute('action', `/todos-os-produtos/${itemCode}/${action}`)
+    modal.openModal()
+  }
 }
 
 // Set new product id when creating a new product
