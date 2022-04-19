@@ -80,6 +80,7 @@ O Desafio começou em 14 de março de 2022.
 - **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
 - **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
 - **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
+- **Implementações futuras:** Barra de pesquisa funcional.
 
 ## 🛡️ Badges recebidas pelo projeto
 
@@ -164,6 +165,7 @@ The Challenge started at March 14th, 2022.
 - **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 - **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
 - **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
+- **Future implementations:** Functional search bar.
 
 ## 🛡️ Badges received in this project
 
