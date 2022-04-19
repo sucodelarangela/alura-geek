@@ -21,13 +21,7 @@ route.get('/login', (req, res) =>
     button: '<div class="header__button button__void button">Login</div>'
   })
 )
-route.get('/todos-os-produtos', (req, res) =>
-  res.render('index', {
-    page: 'all-products',
-    title: 'Produtos',
-    button: '<div class="header__button button__void button">Admin</div>'
-  })
-)
+route.get('/todos-os-produtos', ProductController.viewAll)
 
 route.get('/admin/:code', LoginController.open)
 

@@ -127,5 +127,17 @@ module.exports = {
         '<a class="header__button button__void button" href="login">Login</a>',
       productsList: products
     })
+  },
+
+  async viewAll(req, res) {
+    const db = await Database()
+    const allProducts = await db.all('SELECT * FROM products')
+
+    res.render('index', {
+      page: 'all-products',
+      title: 'Produtos',
+      button: '<div class="header__button button__void button">Admin</div>',
+      products: allProducts
+    })
   }
 }
