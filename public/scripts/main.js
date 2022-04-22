@@ -7,6 +7,18 @@ const productId = ProductId()
 const deleteBtn = document.querySelectorAll('.icon-delete')
 const prodLink = document.querySelectorAll('.products__card--view')
 const addProduct = document.querySelector('.add')
+const searchBtn = document.querySelectorAll('.header__search')
+
+// Open search bar on mobile
+searchBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelector('.header__input').classList.toggle('show')
+    document.querySelector('.header__button').classList.toggle('show')
+    document.querySelector('.header__logo').classList.toggle('show')
+    document.querySelector('.icon-search').classList.toggle('show')
+    document.querySelector('.icon-plus').classList.toggle('show')
+  })
+})
 
 // Open modal and set route to form action when delete button is clicked
 deleteBtn.forEach(btn => {
