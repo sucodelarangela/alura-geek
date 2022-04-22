@@ -26,7 +26,7 @@ _For the English version of this README, click [here](#English)._
 
 Olá, devs!
 
-Neste repositório você encontrará uma página de e-commerce (versão do administrador) para uma loja online de produtos geek chamada **Alura Geek**, que está sendo desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia [Alura](https://www.alura.com.br).
+Neste repositório você encontrará uma página de e-commerce (versão do administrador) para uma loja online de produtos geek chamada **Alura Geek**, que está sendo desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia [Alura](https://www.alura.com.br). O protótipo original do projeto no **Figma** pode ser acessado clicando [neste link.](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
 ## ⚙️ Como usar
 
@@ -110,7 +110,7 @@ _English version_
 
 Hello, devs!
 
-In this repo you will find an e-commerce page (admin version) for a geek store named **Alura Geek**, which is currently in development as a result of a Front-End Challenge (3rd edition) exclusively for students of [Alura](https://www.alura.com.br) tech school.
+In this repo you will find an e-commerce page (admin version) for a geek store named **Alura Geek**, which is currently in development as a result of a Front-End Challenge (3rd edition) exclusively for students of [Alura](https://www.alura.com.br) tech school. The original prototype on **Figma** can be seen [in this link.](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
 ## ⚙️ How to use it
 
