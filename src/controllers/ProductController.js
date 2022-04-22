@@ -141,18 +141,31 @@ module.exports = {
 
   async view(req, res) {
     const db = await Database()
+    const searchQuery = req.body.search
     const category = req.params.category
     const products = await db.all(
       `SELECT * FROM products WHERE category = "${category}"`
     )
+    const queries = await db.all(`
+    SELECT * FROM products WHERE name LIKE "%${searchQuery}%" OR description LIKE "%${searchQuery}%" OR category LIKE "%${searchQuery}%" OR altText LIKE "%${searchQuery}%"`)
 
-    res.render('index', {
-      page: 'view-category',
-      title: 'Ver Produtos',
-      button:
-        '<a class="header__button button__void button" href="login">Login</a>',
-      productsList: products
-    })
+    if (category) {
+      res.render('index', {
+        page: 'view-category',
+        title: 'Ver Produtos',
+        button:
+          '<a class="header__button button__void button" href="login">Login</a>',
+        productsList: products
+      })
+    } else {
+      res.render('index', {
+        page: 'view-category',
+        title: 'Ver Produtos',
+        button:
+          '<a class="header__button button__void button" href="login">Login</a>',
+        productsList: queries
+      })
+    }
   },
 
   async viewAll(req, res) {

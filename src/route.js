@@ -23,6 +23,7 @@ route.get('/login', (req, res) =>
     button: '<div class="header__button button__void button">Login</div>'
   })
 )
+
 route.get('/todos-os-produtos', ProductController.viewAll)
 
 route.get('/admin/:code', LoginController.open)
@@ -44,6 +45,9 @@ route.get('/pass-incorrect', (req, res) =>
       '<a class="header__button button__void button" href="login">Login</a>'
   })
 )
+
+// route.get('/resultado&q=:search', ProductController.view)
+route.post('/search', ProductController.view)
 
 // defining post routes
 // Implicitly, the .index is receiving (req, res) inside ProductController.js
