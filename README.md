@@ -80,14 +80,14 @@ O Desafio dura 4 semanas. Todas as segundas-feiras durante 3 semanas receberemos
 
 O Desafio começou em 14 de março de 2022.
 
-## 📈 Etapas do projeto
+### 📈 Etapas do projeto
 
 -   **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
 -   **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
 -   **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
 -   **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
 
-## 🛡️ Badges recebidas pelo projeto
+### 🛡️ Badges recebidas pelo projeto
 
 <table style="text-align: center;">
   <tr>
@@ -114,7 +114,7 @@ _English version_
 
 </div>
 
-## 🔎 Overview
+### 🔎 Overview
 
 Hello, devs!
 
@@ -122,7 +122,7 @@ In this repo you will find an e-commerce page (admin version) for a geek store n
 
 The original prototype on **Figma** can be seen [in this link.](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
-## ⚙️ How to use it
+### ⚙️ How to use it
 
 You can test the page by clicking the link on the top of this README, but as it is a serverless deploy on Heroku, some functionalities may not work properly (i.e. inserting or editing a product in database). However, if you just want to browse the application, it is perfectly fine.
 
@@ -158,7 +158,7 @@ E-mail: admin@email.com
 Password: 12345aZ
 ```
 
-## 🦾 About the challenge
+### 🦾 About the challenge
 
 The Challenge simulates a real work environment, with tasks required by the designers via **Trello** cards, so students may experience how a real job feels like. It is necessary to communicate and understand what the designers really want from each task, we can choose the technology that best apply for us to develop the code. We can add features and suggest modifications in case we have better ideas and so on.
 
@@ -168,14 +168,14 @@ The Challenge lasts 4 weeks. Every Monday for 3 weeks we will receive new assign
 
 The Challenge started at March 14th, 2022.
 
-## 📈 Project stages
+### 📈 Project stages
 
 -   **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
 -   **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
 -   **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
 -   **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
 
-## 🛡️ Badges received in this project
+### 🛡️ Badges received in this project
 
 <table style="text-align: center;">
   <tr>
@@ -196,4 +196,4 @@ The Challenge started at March 14th, 2022.
 
 ---
 
-Developed with 🧡 by [@sucodelarangela 🍊](https://angelacaldas.vercel.app) (it's a me!)
+Developed with 🧡 by [@sucodelarangela 🍊](https://angelacaldas.vercel.app)
