@@ -10,11 +10,11 @@ Neste repositório você encontrará uma página de e-commerce (versão do admin
 
 Você pode saber um pouco mais como funcionam os _challenges_ da Alura visitando a seção [**🦾 Sobre o desafio**](#challenge).
 
-| 🪧 Vitrine.Dev |                                                                                                                                                                            |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✨ Nome        | **Alura Geek**                                                                                                                                                             |
-| 🏷️ Tecnologias | HTML, CSS, JavaScript, Node, Express, EJS, SQLite3                                                                                                                         |
-| 🚀 URL         | [**Acesse o site**](https://alurageek.herokuapp.com/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto)                                                          |
+| 🪧 Vitrine.Dev  |     |
+| -------------- | --- |
+| ✨ Nome        | **Alura Geek** - Challenge Alura |
+| 🏷️ Tecnologias | HTML, CSS, JavaScript, Node, Express, EJS, SQLite3 |
+| 🚀 URL         | [**Acesse o site**](https://alurageek.herokuapp.com/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [**Protótipo do Figma**](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104) |
 
 ![](https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/og-image.png#vitrinedev)
