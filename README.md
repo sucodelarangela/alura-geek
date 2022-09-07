@@ -13,7 +13,7 @@ Você pode saber um pouco mais como funcionam os _challenges_ da Alura visitando
 | 🪧 Vitrine.Dev  |     |
 | -------------- | --- |
 | ✨ Nome        | **Alura Geek** - Challenge Alura |
-| 🏷️ Tecnologias | HTML, CSS, JavaScript, Node, Express, EJS, SQLite3 |
+| 🏷️ Tecnologias | Node, Express, SQLite3, EJS, CSS, JavaScript  |
 | 🚀 URL         | [**Acesse o site**](https://alurageek.herokuapp.com/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [**Protótipo do Figma**](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104) |
 
