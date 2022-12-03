@@ -10,11 +10,11 @@ Neste repositório você encontrará uma página de e-commerce (versão do admin
 
 Você pode saber um pouco mais como funcionam os _challenges_ da Alura visitando a seção [**🦾 Sobre o desafio**](#challenge).
 
-| 🪧 Vitrine.Dev  |     |
-| -------------- | --- |
-| ✨ Nome        | **Alura Geek** - Challenge Alura |
-| 🏷️ Tecnologias | Node, Express, SQLite3, EJS, CSS, JavaScript  |
-| 🚀 URL         | [**Acesse o site**](https://alurageek.herokuapp.com/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto) |
+| 🪧 Vitrine.Dev |                                                                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✨ Nome        | **Alura Geek** - Challenge Alura                                                                                                                                           |
+| 🏷️ Tecnologias | Node, Express, SQLite3, EJS, CSS, JavaScript                                                                                                                               |
+| 🚀 URL         | [**Acesse o site**](https://alurageek.glitch.me/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto)                                                              |
 | 🔥 Desafio     | [**Protótipo do Figma**](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104) |
 
 ![](https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/og-image.png#vitrinedev)
@@ -82,10 +82,10 @@ O Desafio começou em 14 de março de 2022.
 
 ### 📈 Etapas do projeto
 
--   **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
--   **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
--   **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
--   **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
+- **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
+- **Semana 2:** Implementação do Node.js, Express e EJS para modificar dinamicamente o HTML.
+- **Semana 3:** Validações dos formulários (login, contato e cadastro de produtos), criação de rotas e controllers e implementação do banco de dados.
+- **Semana 4:** Finalização do projeto com cadastro dos itens no banco de dados e funcionalidade de adicionar mais produtos e/ou editar produtos existentes.
 
 ### 🛡️ Badges recebidas pelo projeto
 
@@ -170,10 +170,10 @@ The Challenge started at March 14th, 2022.
 
 ### 📈 Project stages
 
--   **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
--   **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
--   **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
--   **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
+- **Week 1:** Development of structure and style. In my case, I have chosen to develop the page using HTML and CSS and soon the HTML page will change content dinamically with EJS.
+- **Week 2:** Implementation of Node.js, Express and EJS to dinamically change HTML content when navigating the website.
+- **Week 3:** Form validations (login, contact and product registration), creation of routes and controllers and implementation of database.
+- **Week 4:** Project conclusion (products registered in database and new product registration/edition functionality).
 
 ### 🛡️ Badges received in this project
 
