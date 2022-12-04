@@ -8,13 +8,16 @@ Olá, devs!
 
 Neste repositório você encontrará uma página de e-commerce (versão do administrador) para uma loja online de produtos geek chamada **Alura Geek**, que foi desenvolvida como resultado de um Desafio Front-End (3ª edição) exclusivo para alunos da escola de tecnologia [Alura](https://www.alura.com.br).
 
+**Devido à limites impostos pelo serviço de hospedagem, o carregamento inicial da página pode levar alguns segundos.**
+
 Você pode saber um pouco mais como funcionam os _challenges_ da Alura visitando a seção [**🦾 Sobre o desafio**](#challenge).
 
-| 🪧 Vitrine.Dev |                                                                                                                                                                            |
+<!-- prettier-ignore -->
+| 🪧 Vitrine Dev |   |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✨ Nome        | **Alura Geek** - Challenge Alura                                                                                                                                           |
-| 🏷️ Tecnologias | Node, Express, SQLite3, EJS, CSS, JavaScript                                                                                                                               |
-| 🚀 URL         | [**Acesse o site**](https://alurageek.glitch.me/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto)                                                              |
+| ✨ Nome        | **Alura Geek** - Challenge Alura |
+| 🏷️ Tecnologias | Node, Express, SQLite3, EJS, CSS, JavaScript |
+| 🚀 URL         | [**Acesse o site**](https://alurageek.glitch.me/) ou veja como rodar localmente em [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [**Protótipo do Figma**](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104) |
 
 ![](https://raw.githubusercontent.com/sucodelarangela/alura-geek/master/public/images/og-image.png#vitrinedev)
@@ -119,6 +122,8 @@ _English version_
 Hello, devs!
 
 In this repo you will find an e-commerce page (admin version) for a geek store named **Alura Geek**, which was development as a result of a Front-End Challenge (3rd edition) exclusively for students of [Alura](https://www.alura.com.br) tech school.
+
+**Due to limitations from the hoster service, the initial loading of the page may take a few seconds.**
 
 The original prototype on **Figma** can be seen [in this link.](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
